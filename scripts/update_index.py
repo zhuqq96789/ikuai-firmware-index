@@ -78,7 +78,7 @@ def check(base):
         if (base/p).read_bytes()!=data:raise ValueError('Inconsistent list: '+str(p))
     print(f'{len(expected)} version files; {len(archive)} archive files; {len(official)} official files')
     if (base/CHANGELOG).is_file():
-        print(f'{validate((base/CHANGELOG).read_text(encoding="utf-8"))} release notes')
+        print(f'{validate((base/CHANGELOG).read_text(encoding="utf-8"))} unique builds with release notes')
 
 def main():
     parser=argparse.ArgumentParser()

@@ -15,6 +15,6 @@
 
 [官方历史更新日志](official-history.md)只列版本和更新正文，每个 Build 一节，新增记录置顶。
 
-官网日志：[免费版](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331) · [企业版](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447) · [仅有日志、未验证下载的版本](release-notes-only.md)
+官网日志：[免费版](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331) · [企业版](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 历史对照：[LucienShui](https://github.com/LucienShui/ikuai-firmware) · [LOVECHEN](https://github.com/LOVECHEN/ikuai-release) · [shiniuniu](https://github.com/shiniuniu/ikuai-firmware-public) · [iKuaiPatch](https://github.com/iKuaiPatch/firmware_archive) · [bikefly](https://github.com/bikefly/ikuaifw)

@@ -3,8 +3,8 @@ name: Update firmware index
 on:
   workflow_dispatch:
   schedule:
-    # 03:17 Asia/Shanghai (19:17 UTC previous day).
-    - cron: '17 19 * * *'
+    - cron: '0 0 * * *'  # 08:00 Beijing time
+    - cron: '0 13 * * *'  # 21:00 Beijing time
 
 permissions:
   contents: write

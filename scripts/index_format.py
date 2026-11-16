@@ -3,12 +3,15 @@ import re
 from datetime import date
 from urllib.parse import urlsplit
 
-PROJECTS=('LucienShui/ikuai-firmware','LOVECHEN/ikuai-release','shiniuniu/ikuai-firmware-public')
-LUC,LOVE,SHINI=PROJECTS
+PROJECTS=('LucienShui/ikuai-firmware','LOVECHEN/ikuai-release','shiniuniu/ikuai-firmware-public',
+          'iKuaiPatch/firmware_archive','bikefly/ikuaifw')
+LUC,LOVE,SHINI,PATCH,BIKE=PROJECTS
+RAW_PROJECTS=(PATCH,BIKE)
 DEVICE=re.compile(r'(?P<folder>IK-[A-Za-z0-9-]+)_sysupgrade_(?P<version>[34]\.\d+\.\d+)_Build\d{12}\.bin')
 PC=re.compile(r'iKuai8_x(?:32|64)_[34]\.\d+\.\d+_(?:beta_)?(?:Enterprise_)?(?:beta_)?Buil(?:d)?\d{11,12}\.(?:bin|iso)',re.I)
 SHA=re.compile(r'[a-f0-9]{64}')
 SLUG=r'[A-Za-z0-9][A-Za-z0-9._-]{0,180}'
+GIT_PATH=rf'[a-f0-9]{{40}}/(?:{SLUG}/)*{SLUG}'
 MAGIC='# ikuai-history-tsv-v1'
 
 def valid_filename(name):
@@ -26,6 +29,8 @@ def ref_valid(ref):
     base='https://github.com/'+p
     if p==LUC:
         return uri=='' and re.fullmatch(re.escape(base)+r'/blob/main/version_(?:list|enterprise_list|4_list)\.txt',src) is not None
+    if p in RAW_PROJECTS and (blob:=re.fullmatch(re.escape(base+'/blob/')+f'({GIT_PATH})',src)):
+        return uri=='https://raw.githubusercontent.com/'+p+'/'+blob[1]
     tag=re.fullmatch(re.escape(base)+r'/releases/tag/('+SLUG+r')',src)
     if not tag:
         return False
@@ -57,6 +62,10 @@ def encode(entries,updated):
     def compact(ref,name):
         project=ref['project']
         kind=PROJECTS.index(project)
+        if project in RAW_PROJECTS and '/blob/' in ref['source']:
+            commit,path=ref['source'].split('/blob/',1)[1].split('/',1)
+            item=[kind,'git:'+commit,path]
+            return item+[ref['sha256']] if ref['sha256'] else item
         item=[kind,ref['source'].rsplit('/',1)[-1]]
         asset=ref['url'].rsplit('/',1)[-1] if ref['url'] else ''
         override=asset if asset and asset!=name else ''
@@ -76,6 +85,10 @@ def expand(ref,name):
     base='https://github.com/'+p
     asset=(ref[2] if len(ref)>2 else '') or name
     sha=ref[3] if len(ref)>3 else ''
+    if p in RAW_PROJECTS and target.startswith('git:'):
+        locator=target[4:]+'/'+asset
+        return {'project':p,'source':base+'/blob/'+locator,
+                'url':'https://raw.githubusercontent.com/'+p+'/'+locator,'sha256':sha}
     return {'project':p,
             'source':base+('/blob/main/' if p==LUC else '/releases/tag/')+target,
             'url':'' if p==LUC else base+'/releases/download/'+target+'/'+asset,

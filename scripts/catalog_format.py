@@ -17,10 +17,19 @@ def device_model(name):
 
 def catalog_encode(day,archive,official):
     parts=encode(normalize(archive),day).splitlines()[3:]
-    return (json.dumps({'schema':2,'date':day,'archive':[
-        [str(row.partition('\t')[0]),json.loads(row.partition('\t')[2])] for row in parts],
-        'official':sorted({(name,model) for name,model in official if official_valid(name,model)})},
-        ensure_ascii=True,separators=(',',':'))+'\n').encode('ascii')
+    catalog={'schema':2,'date':day,'archive':[],'official':sorted(
+        {(name,model) for name,model in official if official_valid(name,model)})}
+    extra=[]
+    for row in parts:
+        name,_,encoded=row.partition('\t')
+        refs=json.loads(encoded)
+        legacy=[r for r in refs if r[0]<3]
+        additions=[r for r in refs if r[0]>=3]
+        if legacy:catalog['archive'].append([name,legacy])
+        if additions:extra.append([name,additions])
+    # Old desktop clients can still read the base archive and official files.
+    if extra:catalog['archive_extra']=extra
+    return (json.dumps(catalog,ensure_ascii=True,separators=(',',':'))+'\n').encode('ascii')
 
 def catalog_decode(raw):
     j=json.loads(raw)
@@ -28,10 +37,14 @@ def catalog_decode(raw):
         raise ValueError('历史目录格式不兼容。')
     day=j['date']
     date.fromisoformat(day)
-    lines=['# ikuai-history-tsv-v1','# updated='+day,'# filename\trefs']
-    for name,refs in j['archive']:
-        lines.append(name+'\t'+json.dumps(refs,ensure_ascii=True,separators=(',',':')))
-    _,rows=decode(('\n'.join(lines)+'\n').encode('ascii'))
+    def records(group):
+        lines=['# ikuai-history-tsv-v1','# updated='+day,'# filename\trefs']
+        for name,refs in group:
+            lines.append(name+'\t'+json.dumps(refs,ensure_ascii=True,separators=(',',':')))
+        return decode(('\n'.join(lines)+'\n').encode('ascii'))[1]
+    rows=records(j['archive'])
+    if j.get('archive_extra'):
+        rows=normalize(rows+records(j['archive_extra']))
     entries=j['official']
     if not all(isinstance(r,list) and len(r)==2 and official_valid(*r) for r in entries):
         raise ValueError('最近官方目录含有无效条目。')

@@ -11,7 +11,11 @@
 
 GitHub Actions 每天北京时间 **03:17** 查询爱快 3.x 公开清单和 4.x 版本接口，当发现新版本或新 Build 时追加到历史目录。上游不再列出旧版本时，仓库已有历史仍保留。可在 [Actions](https://github.com/zsz520/ikuai-firmware-index/actions/workflows/update-index.yml) 手动运行。
 
+设备型号从官方清单的固件文件名发现。3.x 清单或 4.x 汇总清单新增型号时会自动生成对应 TXT；4.x 也会继续查询汇总清单发现的型号和已知机型的专用清单。
+
 小工具通过 [data/catalog.json](https://raw.githubusercontent.com/zsz520/ikuai-firmware-index/main/data/catalog.json) 一次获取完整目录和镜像来源；TXT 用于直接浏览、比较或复用版本号。仓库没有上传固件文件。日更不需要客户端下载证书或令牌。
+
+历史列表也对照[爱快免费版更新日志](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)和[企业版更新日志](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)。只有日志记录、未找到可验证下载的版本列在 [release-notes-only.json](data/release-notes-only.json)，仅用于 TXT，不会在小工具里列为下载项。
 
 历史来源与致谢：
 

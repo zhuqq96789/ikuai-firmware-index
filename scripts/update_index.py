@@ -1,4 +1,4 @@
-import argparse,datetime as dt,os,re
+import argparse,datetime as dt,json,os,re
 from pathlib import Path
 from index_format import decode
 from catalog_format import catalog_decode,catalog_encode,device_model
@@ -11,7 +11,14 @@ PC_LISTS={
 }
 def day():
     return dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).date().isoformat()
-def version_lines(archive,official):
+def notes_only(base):
+    path=base/'data/release-notes-only.json'
+    if not path.is_file():
+        return []
+    records=json.loads(path.read_bytes())['records']
+    return [(r['list'],r['version']) for r in records]
+
+def version_lines(archive,official,documented=()):
     names={e['filename'] for e in archive}|{name for name,_ in official}
     lists={Path(p):set() for p in PC_LISTS.values()}
     for name in names:
@@ -22,6 +29,11 @@ def version_lines(archive,official):
         model=device_model(name)
         path=Path('devices')/(model+'.txt') if model else Path(PC_LISTS[(version[0],'enterprise' if '_enterprise_' in name.lower() else 'free')])
         lists.setdefault(path,set()).add((tuple(map(int,version.split('.'))),b[1]))
+    for filename,build in documented:
+        match=re.fullmatch(r'([34]\.\d+\.\d+)_Build(\d{12})',build)
+        if filename not in PC_LISTS.values() or not match:
+            raise ValueError('Malformed release-note-only record')
+        lists[Path(filename)].add((tuple(map(int,match[1].split('.'))),match[2]))
     return {p:''.join('.'.join(map(str,v))+'_Build'+b+'\n' for v,b in sorted(rows,reverse=True)).encode()
             for p,rows in lists.items()}
 
@@ -40,21 +52,23 @@ def seed(base,legacy_dir):
         if path.exists():
             rows.update(extract(path.read_text(encoding='utf-8-sig'),'4',model))
     write(base/CATALOG,catalog_encode(day(),archive,rows))
-    for p,content in version_lines(archive,rows).items():write(base/p,content)
+    for p,content in version_lines(archive,rows,notes_only(base)).items():write(base/p,content)
 
 def update(base,fetch=collect):
     old_date,archive,official=catalog_decode((base/CATALOG).read_bytes())
-    rows,failed=fetch(os.environ.get('IKUAI_INDEX_GATEWAY',''))
+    known3={model for name,model in official if '_3.' in name and device_model(name)}
+    known4={model for name,model in official if '_4.' in name and device_model(name)}
+    rows,failed=fetch(os.environ.get('IKUAI_INDEX_GATEWAY',''),known3,known4)
     if not rows:
         raise RuntimeError('All official queries failed; existing index preserved.')
     union=official|rows
     print('New official files:',len(union)-len(official))
     write(base/CATALOG,catalog_encode(day() if union!=official else old_date,archive,union))
-    for p,content in version_lines(archive,union).items():write(base/p,content)
+    for p,content in version_lines(archive,union,notes_only(base)).items():write(base/p,content)
 
 def check(base):
     _,archive,official=catalog_decode((base/CATALOG).read_bytes())
-    expected=version_lines(archive,official)
+    expected=version_lines(archive,official,notes_only(base))
     for p,data in expected.items():
         if (base/p).read_bytes()!=data:raise ValueError('Inconsistent list: '+str(p))
     print(f'{len(expected)} version files; {len(archive)} archive files; {len(official)} official files')

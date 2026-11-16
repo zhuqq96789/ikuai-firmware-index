@@ -8,9 +8,8 @@ def official_valid(name,model):
     if PC.fullmatch(name):
         return model==('X86ENT' if '_enterprise_' in name.lower() else 'X86')
     m=DEVICE.fullmatch(name)
-    return (m is not None and re.fullmatch(r'[A-Za-z0-9-]{1,40}',model) is not None
-            and m['folder'].rsplit('-',1)[0] and m['folder'].split('-',2)[-1]==model
-            and (m['version'].startswith('3.') or model in ALLOWED_4_MODELS))
+    return (m is not None and re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9-]{0,39}',model) is not None
+            and m['folder'].split('-',2)[-1]==model)
 
 def device_model(name):
     m=DEVICE.fullmatch(name)

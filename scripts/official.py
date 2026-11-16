@@ -29,23 +29,33 @@ def sections(text):
             k,v=line.split('=',1); fields[k.strip()]=v.strip()
     if model: yield model,fields
 
-def extract(text,major,only=None):
+def extract_manifest(text,major,only=None,*,include_device_sections=False):
     rows=set()
+    notes={}
     for section,fields in sections(text):
-        section_model=re.sub(r'_(?:BETA|PREVIEW|PRE)$','',section,flags=re.I)
+        section_model=re.sub(r'_(BETA|PREVIEW|PRE)$','',section,flags=re.I)
+        channel=section[len(section_model)+1:].upper()
         ver=fields.get('system_ver','')
         if not re.fullmatch(major+r'\.\d+\.\d+',ver): continue
+        body=re.sub(r'\\+r\\+n|\\+n|\\+r','\n',fields.get('update_content','')).strip()
         for k in ('firmware','firmware_x64'):
             name=fields.get(k,'')
-            model=device_model(name) or section_model
-            if device_model(name) and fields.get('firmwarename',name.split('_sysupgrade_')[0])!=name.split('_sysupgrade_')[0]:
+            device=device_model(name)
+            model=device or section_model
+            if device and fields.get('firmwarename',name.split('_sysupgrade_')[0])!=name.split('_sysupgrade_')[0]:
                 continue
-            if only and model!=only: continue
+            if only and model!=only and not (include_device_sections and device): continue
             if ('_'+ver+'_') in name and name.lower().endswith('.bin') and official_valid(name,model):
                 rows.add((name,model))
                 if model=='X86':
                     rows.add((name[:-4]+'.iso',model))
-    return rows
+                build=re.search(r'_Buil(?:d)?(\d{12})\.bin$',name,re.I)
+                if build and body and body not in ('无','暂无','—','-'):
+                    notes[model,ver,build[1],channel]=body
+    return rows,notes
+
+def extract(text,major,only=None):
+    return extract_manifest(text,major,only)[0]
 
 def official4_text(model,gw,fetcher=fetch):
     if not re.fullmatch(r'[!-~]{10,128}',gw):
@@ -68,27 +78,26 @@ def official4_text(model,gw,fetcher=fetch):
     return data.decode('utf-8-sig')
 
 def official4(model,gw,fetcher=fetch,*,include_device_sections=False):
-    entries=extract(official4_text(model,gw,fetcher),'4',None if include_device_sections else model)
-    if include_device_sections:
-        entries={r for r in entries if r[1]==model or device_model(r[0])}
-    return entries
+    return extract_manifest(official4_text(model,gw,fetcher),'4',model,
+                            include_device_sections=include_device_sections)
 
 def collect(gw,known3=(),known4=()):
-    done=set(); failed=[]
+    done=set(); notes={}; failed=[]
     def get(jobs):
         rows=set()
         for key,job in jobs.items():
             try:
-                found=job.result()
+                found,logs=job.result()
                 if not found: raise ValueError('no supported entries')
                 rows.update(found)
-                print(key, 'official files:',len(found))
+                notes.update(logs)
+                print(key, 'official files:',len(found),'release notes:',len(logs))
             except Exception as exc:
                 failed.append(key)
                 print(f'::warning::Official manifest {key}: {type(exc).__name__}; history was preserved.')
         return rows
     with ThreadPoolExecutor(max_workers=8) as pool:
-        early3=pool.submit(lambda:extract(fetch(LEGACY).decode('utf-8-sig'),'3'))
+        early3=pool.submit(lambda:extract_manifest(fetch(LEGACY).decode('utf-8-sig'),'3'))
         early4={p:pool.submit(official4,p,gw,include_device_sections=True) for p in ('X86','X86ENT')}
         rows3=get({'3.x':early3})
         rows4=get(early4)
@@ -97,4 +106,4 @@ def collect(gw,known3=(),known4=()):
         new3={model for name,model in rows3 if device_model(name)}-set(known3)
         models=sorted(set(ALLOWED_4_MODELS)|set(known4)|advertised|new3)
         done.update(get({p:pool.submit(official4,p,gw) for p in models}))
-    return done,failed
+    return done,notes,failed

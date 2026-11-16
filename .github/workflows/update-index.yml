@@ -1,4 +1,4 @@
-name: Update firmware index
+name: Update firmware index and release notes
 
 on:
   workflow_dispatch:
@@ -19,19 +19,19 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
-      - name: Rebuild and validate index
+      - name: Update and validate firmware index and release notes
         env:
           IKUAI_INDEX_GATEWAY: ${{ secrets.IKUAI_INDEX_GATEWAY }}
         run: |
           python3 scripts/update_index.py
           python3 scripts/update_index.py --check
-      - name: Commit changed index
+      - name: Commit changed index and release notes
         run: |
-          git add -- data/catalog.json devices version_list.txt version_enterprise_list.txt version_4_list.txt version_4_enterprise_list.txt
+          git add -- data/catalog.json devices version_list.txt version_enterprise_list.txt version_4_list.txt version_4_enterprise_list.txt official-history.md
           if git diff --cached --quiet; then
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Update firmware history index'
+          git commit -m 'Update firmware index and release notes'
           git push

@@ -3,6 +3,7 @@ from pathlib import Path
 from index_format import decode
 from catalog_format import catalog_decode,catalog_encode,device_model
 from official import collect,extract,ALLOWED_4_MODELS
+from update_official_history import OUTPUT as CHANGELOG,with_manifest_notes,validate
 ROOT=Path(__file__).resolve().parents[1]
 CATALOG=Path('data/catalog.json')
 PC_LISTS={
@@ -58,13 +59,17 @@ def update(base,fetch=collect):
     old_date,archive,official=catalog_decode((base/CATALOG).read_bytes())
     known3={model for name,model in official if '_3.' in name and device_model(name)}
     known4={model for name,model in official if '_4.' in name and device_model(name)}
-    rows,failed=fetch(os.environ.get('IKUAI_INDEX_GATEWAY',''),known3,known4)
+    rows,changes,failed=fetch(os.environ.get('IKUAI_INDEX_GATEWAY',''),known3,known4)
     if not rows:
         raise RuntimeError('All official queries failed; existing index preserved.')
     union=official|rows
+    history=base/CHANGELOG
+    text=with_manifest_notes(history.read_text(encoding='utf-8') if history.exists() else '',changes)
+    if changes or history.exists():validate(text)
     print('New official files:',len(union)-len(official))
     write(base/CATALOG,catalog_encode(day() if union!=official else old_date,archive,union))
     for p,content in version_lines(archive,union,notes_only(base)).items():write(base/p,content)
+    if changes or history.exists():write(history,text.encode('utf-8'))
 
 def check(base):
     _,archive,official=catalog_decode((base/CATALOG).read_bytes())
@@ -72,6 +77,8 @@ def check(base):
     for p,data in expected.items():
         if (base/p).read_bytes()!=data:raise ValueError('Inconsistent list: '+str(p))
     print(f'{len(expected)} version files; {len(archive)} archive files; {len(official)} official files')
+    if (base/CHANGELOG).is_file():
+        print(f'{validate((base/CHANGELOG).read_text(encoding="utf-8"))} release notes')
 
 def main():
     parser=argparse.ArgumentParser()

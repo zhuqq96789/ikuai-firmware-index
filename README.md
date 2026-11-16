@@ -17,4 +17,4 @@
 
 官网日志：[免费版](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331) · [企业版](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
-历史对照：[LucienShui](https://github.com/LucienShui/ikuai-firmware) · [LOVECHEN](https://github.com/LOVECHEN/ikuai-release) · [shiniuniu](https://github.com/shiniuniu/ikuai-firmware-public) · [iKuaiPatch](https://github.com/iKuaiPatch/firmware_archive) · [bikefly](https://github.com/bikefly/ikuaifw)
+历史对照：[LucienShui](https://github.com/LucienShui/ikuai-firmware) · [LOVECHEN](https://github.com/LOVECHEN/ikuai-release) · [shiniuniu](https://github.com/shiniuniu/ikuai-firmware-public) · [iKuaiPatch](https://github.com/iKuaiPatch/firmware_archive) · [bikefly](https://github.com/bikefly/ikuaifw) · [C0KE](https://github.com/C0KE/ikuai-fireware) · [iKuaiPatch 清单归档](https://github.com/iKuaiPatch/tools/commits/main/submit3/Version_all)

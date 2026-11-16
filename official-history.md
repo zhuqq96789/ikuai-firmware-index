@@ -1,13 +1,8 @@
 # 爱快官方历史更新日志
 
-来源：[免费版历史日志](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)、[企业版历史日志](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)、[官网下载页](https://www.ikuai8.com/component/download)及官方 3.x、4.x 版本接口。仅收录官方提供了更新正文的版本。
-
-每个 Build 只列一次；相同的更新正文合并，正文有差异时标注适用范围。
-
 ## 4.0.317 · Build202611101445
 
 <!-- ikuai-sources:[["免费版","6de513b168db5a52bff11b9f58053abab9af351d9da4249f9f646050108d16ca","### 爱快 4.0.317 Build{build}","来源：官方 4.x 版本接口"]] -->
-**适用：** 免费版  ·  来源：官方 4.x 版本接口
 
 > 优化：<br>
 > 1、兼容部分安卓手机在移动端页面上的适配性；<br>
@@ -20,7 +15,6 @@
 ## 4.0.317 · Build202611101439
 
 <!-- ikuai-sources:[["企业版","a52ff65df15cb07b3a2cd11b7dbded3fb26bdd2fc5742f35de4698bb5cc8ee75","### 爱快 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","17970b576ea58957a9f7fa81326be06361d97a20fef8c02ed03ea9f005c02e4b","### Q3S 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","1db098e77979c52f2252d496620b855042895cb8db67370a391ab85d41c36505","### M60 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","22a97017020f91a4607b98e69c9599594121cca48d574247854637bcf4e3e3ec","### M360X 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","2cc2ac4eb54bb45dfb447416881140a4c9c91a8e32ddd6964029f59f6976e87e","### Q6000 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","3540e41e788f1cd5c97d1715d90f43c3320463026e2b834d98b44c5734e22577","### Y6000G-PRO 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","38c73929fdba9789da4b51ac38c331a745028e2d0c5e3e4d564e7c7defc73235","### C3000 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","3d31c710f92818f82e18e32c9dd2e3629627cb8a3e25617ea5a31daab4127574","### M08 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","5480c64f752dc278083d005791f7d1e2153838a97836f811cea0db861dc5dc30","### M100 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","5feca0d4a1ec80d367b65382e8d46434c68fff45b13f2f957224082ebb2ef72c","### A100-P 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","720cccf278cb112e801b349fad725c08ee251c83fe0bae8b7831f59ba4b15dcf","### A50 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","8d5c3f1074a8a7b440581c94741012065fa89b2f339d6748fa34e0b827982575","### A50-P 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","a417b25df6d261c1c17a0b59518e1bd8a9495209211dee7785e824258259f16d","### Y3000G-PRO 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","a41e4397bd6aa5a37c5dda31ac3deaa9bd7f4c6c7707c066cbef2b36ce0b5ad4","### A50X-P 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","c2f7f23388e117367109e07deb073b6df3a5345712eee244b0bd48b067f288b5","### M200 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","d54b912b1e25b0f9d30588c03accc38c9bbbe711e35db80ea8c23e1e33c37b6e","### M10S 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","d5891fe862afc7a43b79ab7d020a1d86405595fb35699d5c8d7939fe2ac2b184","### Q3000 4.0.317 Build{build}","来源：官方 4.x 版本接口"],["官方设备","f3f3f5741e2b35372d228d2b211cf2c35cf9ce0c0788151fd3bc84e4e74aaf47","### A160 4.0.317 Build{build}","来源：官方 4.x 版本接口"]] -->
-**适用：** A100-P、A160、A50、A50-P、A50X-P、C3000、M08、M100、M10S、M200、M360X、M60、Q3000、Q3S、Q6000、Y3000G-PRO、Y6000G-PRO、企业版  ·  来源：官方 4.x 版本接口
 
 > 优化：<br>
 > 1、兼容部分安卓手机在移动端页面上的适配性；<br>
@@ -33,7 +27,6 @@
 ## 4.0.316 · Build202611091148
 
 <!-- ikuai-sources:[["官方设备","04560cc53adc1e4516f7b576a4e6d0f00e7a5766cef9a908f741f952d68cfcdd","### Q3000 4.0.316 Build{build}","来源：官方 4.x 版本接口"],["官方设备","512cd1991cc696865a9250ecea1b71367e48365b29857312e87e12e3cb32986a","### Y6000G-PRO 4.0.316 Build{build}","来源：官方 4.x 版本接口"],["官方设备","69d86641d089a7edfc5be879d601c889890184b299928a34627b9d32b3cb4978","### Q6000 4.0.316 Build{build}","来源：官方 4.x 版本接口"],["官方设备","7bc40418d1e1bd317f95c657c34dfd0a0de2edc24493f68b1f81392aa69418fa","### Y3000G-PRO 4.0.316 Build{build}","来源：官方 4.x 版本接口"],["官方设备","f8b33db4f5789c41939e59c4ce5929217385cde976f88f16d50e25ea52ef6fbf","### Q3S 4.0.316 Build{build}","来源：官方 4.x 版本接口"]] -->
-**适用：** Q3000、Q3S、Q6000、Y3000G-PRO、Y6000G-PRO  ·  来源：官方 4.x 版本接口
 
 > 新增：<br>
 > 1、首页右上角新增常驻快捷入口；<br>
@@ -47,7 +40,6 @@
 ## 3.7.26 · Build202609111743
 
 <!-- ikuai-sources:[["免费版","ce9a5dded1be39b77d8e3d2cde4b0deb96ad5bb9d60788901c650517d4a8d28a","### iKuai8_3.7.26_Build{build}","官网发布：2026-09-16 11:43:39 · [来源](https://www.ikuai8.com/component/download)"]] -->
-**适用：** 免费版  ·  官网发布：2026-09-16 11:43:39 · [来源](https://www.ikuai8.com/component/download)
 
 **优化功能**
 
@@ -58,7 +50,6 @@
 ## 3.7.26 · Build202609111742
 
 <!-- ikuai-sources:[["企业版","2a400bec22c88849080e840c47ff672dd6f5af4c1680e8285d3d2950317ee93c","### iKuai8_3.7.26_Enterprise_Build{build}","官网发布：2026-09-16 11:43:39 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2026-09-16 11:43:39 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **优化功能**
 
@@ -66,13 +57,11 @@
 <!-- /ikuai-sources -->
 
 <!-- ikuai-sources:[["官方设备","05b8eaa977acd6f413354a808af92fdcc23ea4abde64a837328c43af3204e454","### A50 3.7.26 Build{build}","来源：官方 3.x 版本接口"],["官方设备","0d86d96029308f031e2c615afd9155bf4e30af17cb678d7d4f52b62b309a8050","### M08 3.7.26 Build{build}","来源：官方 3.x 版本接口"],["官方设备","1b480eea1094a79481ba1c0409ff4647c5a306420c52bcd0c216e0906c25feb4","### A100-P 3.7.26 Build{build}","来源：官方 3.x 版本接口"],["官方设备","1ba1bf4630ea97918e063d532028eb64a32ce9368f3e011326a7cd39fee4c390","### M100 3.7.26 Build{build}","来源：官方 3.x 版本接口"],["官方设备","62a7c0130bf0704be9b63fe4165b373687db7bfc6f722703a03c5380abbc9a11","### A50-P 3.7.26 Build{build}","来源：官方 3.x 版本接口"],["官方设备","69a4868c0743439f3d955211ff4862316672096b0fcc5175aefa149b2c31a4ac","### A160 3.7.26 Build{build}","来源：官方 3.x 版本接口"],["官方设备","6f5cae846a70860b8630dfd3ceb8e41bff3afc1e1031da5a842754fdba2a8f44","### M10S 3.7.26 Build{build}","来源：官方 3.x 版本接口"],["官方设备","7d3b6d8fd50472d2b40ad9c01087ada0a4c5ba20c7f79890134a7574b4adb119","### M200 3.7.26 Build{build}","来源：官方 3.x 版本接口"],["官方设备","84af8f6de375ef48da532f09f6b02421d91bb634982a1b118bc843a5a1ce10fd","### M360X 3.7.26 Build{build}","来源：官方 3.x 版本接口"],["官方设备","850202943abd8558a51d056ee0ba184e14fca770886314d822d114e2de5de501","### C3000 3.7.26 Build{build}","来源：官方 3.x 版本接口"],["官方设备","b5a1db5a65b9d2c74c5b6e3e67bed271615d3b53991deb92966d4d2f923fbcc9","### A50X-P 3.7.26 Build{build}","来源：官方 3.x 版本接口"],["官方设备","e170aeeebd034c2feed57cb6acc11b639c998179068b592cc20e75b6dd206dc8","### M60 3.7.26 Build{build}","来源：官方 3.x 版本接口"]] -->
-**适用：** A100-P、A160、A50、A50-P、A50X-P、C3000、M08、M100、M10S、M200、M360X、M60  ·  来源：官方 3.x 版本接口
 
 > 1.部分环境下OpenVPN拨号获取的IP地址错误
 <!-- /ikuai-sources -->
 
 <!-- ikuai-sources:[["官方设备","39864da5c498c8abb3be6c4a742ebb234ab48a1d274f14cb8aa74a59289beeeb","### Q6000 3.7.26 Build{build}","来源：官方 3.x 版本接口"],["官方设备","8fa4c1f28c37f101f940f839c1509be7a3e92a35cd3a03f39921a8490d174133","### Q3S 3.7.26 Build{build}","来源：官方 3.x 版本接口"],["官方设备","b145b32bd24532fa6b5c214ddb0fb8e9fab7a80ec5e83cdcba40a6c56f51b7ed","### Q3000 3.7.26 Build{build}","来源：官方 3.x 版本接口"],["官方设备","e97029aa23a3f5c1d1051420ee87f1abf6a32b4c480ee0e94babbfc54460e5da","### Y3000G-PRO 3.7.26 Build{build}","来源：官方 3.x 版本接口"],["官方设备","f28c45daa1b898b8900eac0830b2c6843d04fb52a958c5f82f32c3e1e254e8c1","### Y6000G-PRO 3.7.26 Build{build}","来源：官方 3.x 版本接口"]] -->
-**适用：** Q3000、Q3S、Q6000、Y3000G-PRO、Y6000G-PRO  ·  来源：官方 3.x 版本接口
 
 > 1.mesh组网环境下终端无法连接从设备无线SSID<br>
 > 2.无线服务-黑白名单在系统时间为周日时配置后不生效<br>
@@ -83,7 +72,6 @@
 ## 3.7.25 · Build202609021525
 
 <!-- ikuai-sources:[["免费版","d722420f70ad267e47e5a53594c0358e88477de2f7628d7cf2613cba7e9e1d25","### 3.7.25_Build{build}","官网发布：2026-09-03 11:33:03 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2026-09-03 11:33:03 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -102,7 +90,6 @@
 ## 3.7.24 · Build202608141210
 
 <!-- ikuai-sources:[["免费版","6626128fae32c20ac2b20a5bf3c5b6ca74da8e9bdaaf840eec989468ef33da16","### 3.7.24_Build{build}","官网发布：2026-08-14 17:07:18 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2026-08-14 17:07:18 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -121,7 +108,6 @@
 ## 3.7.24 · Build202608141208
 
 <!-- ikuai-sources:[["企业版","5d3b5b66e13d9b3ebaf8bec3d79423190e1c57f93ea4c921e9313f9170e8a66e","### iKuai8_3.7.24_Enterprise_Build{build}","官网发布：2026-08-14 17:07:14 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2026-08-14 17:07:14 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -140,7 +126,6 @@
 ## 3.7.23 · Build202606021826
 
 <!-- ikuai-sources:[["免费版","2f94339bd4d438e8ee0164ae831aced2c4af1c0c78cbae131693d8a390a7b62b","### iKuai8_3.7.23_Build{build}","官网发布：2026-06-03 16:49:24 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2026-06-03 16:49:24 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -151,7 +136,6 @@
 ## 3.7.23 · Build202606021825
 
 <!-- ikuai-sources:[["企业版","8da251833d7188419463c784ae8931abfca4e1fba19d0501f3d4f8f467f06d2a","### iKuai8_3.7.23_Enterprise_Build{build}","官网发布：2026-06-03 16:50:31 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2026-06-03 16:50:31 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -159,7 +143,6 @@
 <!-- /ikuai-sources -->
 
 <!-- ikuai-sources:[["官方设备","57170e676da1236031bb23fa5e50d1802ccffbe77c1d816203cc1829e836d1b3","### M60X 3.7.23 Build{build}","来源：官方 3.x 版本接口"]] -->
-**适用：** M60X  ·  来源：官方 3.x 版本接口
 
 > 新增：<br>
 > 1.升级v4.0正式版确认界面，增加快捷备份本机配置
@@ -169,7 +152,6 @@
 ## 3.7.22 · Build202604081739
 
 <!-- ikuai-sources:[["官方设备","14bee7e5c03a51f425c557f5705b9b9ae3d26a78130ee2612c0b9cc70bce309f","### M5S 3.7.22 Build{build}","来源：官方 3.x 版本接口"]] -->
-**适用：** M5S  ·  来源：官方 3.x 版本接口
 
 > 新增：<br>
 > 1.版本升级中新增体验版和内测版，可选择升级体验版抢先使用新功能
@@ -179,7 +161,6 @@
 ## 3.7.22 · Build202603301148
 
 <!-- ikuai-sources:[["企业版","d58d9eecb4b2ceef6dd8b830ef2113553f9b7f31db51ff54100510da3ea098d6","### iKuai8_3.7.22_Enterprise_Build{build}","官网发布：2026-04-01 18:52:20 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2026-04-01 18:52:20 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -190,7 +171,6 @@
 ## 3.7.22 · Build202603301146
 
 <!-- ikuai-sources:[["免费版","0f7713451344dd3bae9febe53823e7ffabfdd37ad5cccad4991c498ec1ec8abb","### iKuai8_3.7.22_Build{build}","官网发布：2026-04-01 10:40:21 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2026-04-01 10:40:21 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -201,7 +181,6 @@
 ## 3.7.21 · Build202509221910
 
 <!-- ikuai-sources:[["企业版","f2c5998a726fb5059df6d534256d2906b2de27eadb6ce51812c8919c65752003","### iKuai8_3.7.21_Enterprise_Build{build}","官网发布：2025-09-25 14:24:33 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2025-09-25 14:24:33 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -220,7 +199,6 @@
 <!-- /ikuai-sources -->
 
 <!-- ikuai-sources:[["官方设备","014e637a8a68c3b368fef5fa4854caa44445191b521b9233fc016765b0e1c462","### C20 3.7.21 Build{build}","来源：官方 3.x 版本接口"],["官方设备","106f52d6451433d8f4dd2a91a1d5ceb2d12c08870c4177c5809b41d4e66a4acb","### Q3600 3.7.21 Build{build}","来源：官方 3.x 版本接口"],["官方设备","52aa3426345afed3a1b0f5a910fb8e993fcbff33b381567d6ecf0cc3e03f18e8","### C25-G 3.7.21 Build{build}","来源：官方 3.x 版本接口"],["官方设备","6e122be6becdc739531d91faf73666518a8fdf24ae3c5d1b03b1afc978161401","### C50 3.7.21 Build{build}","来源：官方 3.x 版本接口"],["官方设备","7ac2681f96c99a4b657178702b1f8f18b337097139d78feee18934f60ddca597","### A135S 3.7.21 Build{build}","来源：官方 3.x 版本接口"],["官方设备","948497a96e6dc60d7514a43645c87b08fee9471a06d8d2f6a5c4b50738e42d27","### C90 3.7.21 Build{build}","来源：官方 3.x 版本接口"],["官方设备","a5f372bb2313864af7623474f2b003f4d3a0584151528f1eac888dfbed96f85c","### A220PRO 3.7.21 Build{build}","来源：官方 3.x 版本接口"],["官方设备","ca2b6cda3e2922d8e3bbfe380a3e68dad7b0bf5594c1fa77dac6371e50c5a146","### Q90 3.7.21 Build{build}","来源：官方 3.x 版本接口"],["官方设备","cc87aa9efb7b1f95b15b32c265b6130016de99e7b46e509f3675fc7a91bea260","### Q85 3.7.21 Build{build}","来源：官方 3.x 版本接口"],["官方设备","dacd5c23e5d35f79ff3a52ce29bc784dcc734db2d04b6b2fd736420c8edef5c7","### A139S 3.7.21 Build{build}","来源：官方 3.x 版本接口"],["官方设备","e9d7acf9c4d92006ebff3ab349c079a3944d0268b14c60b2e41d3afa4d9c241d","### Q1800L 3.7.21 Build{build}","来源：官方 3.x 版本接口"],["官方设备","ef4c0dd1bd2ab12aaa6cad3a14021a1495dfbfb73c6b72a84c307a5b8243c3c1","### A130 3.7.21 Build{build}","来源：官方 3.x 版本接口"]] -->
-**适用：** A130、A135S、A139S、A220PRO、C20、C25-G、C50、C90、Q1800L、Q3600、Q85、Q90  ·  来源：官方 3.x 版本接口
 
 > 修复：<br>
 > 1. 内外网设置：部分环境网卡无法显示的bug<br>
@@ -240,7 +218,6 @@
 ## 3.7.21 · Build202508211345
 
 <!-- ikuai-sources:[["免费版","42ef09cf9b9f31633d19b3e2f31fad9b5fd0d7178ea75aa80c6f3819fbf83dea","### 3.7.21_Build{build}","官网发布：2025-08-27 10:01:50 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2025-08-27 10:01:50 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -263,7 +240,6 @@
 ## 3.7.20 · Build202506131151
 
 <!-- ikuai-sources:[["企业版","448020a49d0a2daab537fd2e8358541fd422e1784f0214655eb6494d3c059fbe","### iKuai8_3.7.20_Enterprise_Build{build}","官网发布：2025-06-17 09:51:45 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2025-06-17 09:51:45 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -293,7 +269,6 @@
 ## 3.7.20 · Build202506131128
 
 <!-- ikuai-sources:[["官方设备","06e678b61b810157a08fcfe7326d496a51139f5b33850af0e7ee72efbdede68f","### M5 3.7.20 Build{build}","来源：官方 3.x 版本接口"],["官方设备","0f86778b5484dc735068658e4a5196204dcdb86245287a5fcd78e4b5ef684378","### M1 3.7.20 Build{build}","来源：官方 3.x 版本接口"],["官方设备","190dcdb041a3f52cf08df9b8ce4a227638d0c93d1877260084f159981e869c49","### M50 3.7.20 Build{build}","来源：官方 3.x 版本接口"],["官方设备","1acf26813951aae2ad386a53650ca72f59daee23f86e06bd5abc030d51b3b913","### Q50 3.7.20 Build{build}","来源：官方 3.x 版本接口"],["官方设备","4459d984a9f29df55afa6a5f28dd64250080b0ef9ba37ee3b4defb8e367a5499","### A125 3.7.20 Build{build}","来源：官方 3.x 版本接口"],["官方设备","7b479c1c53c77f86f0d357fd6676c7f8c924ea82757e422eaeecfafed487a374","### G05 3.7.20 Build{build}","来源：官方 3.x 版本接口"],["官方设备","891b5919c4c740079392bb326a1b80030c06d1ec470f33a2a2d14b5e9c7741ce","### A120 3.7.20 Build{build}","来源：官方 3.x 版本接口"],["官方设备","c1b67c618934987bfe1f95c64732ea72e256475d8de4c805388c95a5d7127108","### Q1800 3.7.20 Build{build}","来源：官方 3.x 版本接口"],["官方设备","e7158391d1cb7b98a93398a5ea030853c6d2eccab2c1d396d4fe7a4b906e0076","### Q80 3.7.20 Build{build}","来源：官方 3.x 版本接口"],["官方设备","fec903872b9e03399557de9f1dc7e26175c67edc9ae05f27f542a04643a82c4b","### M2 3.7.20 Build{build}","来源：官方 3.x 版本接口"]] -->
-**适用：** A120、A125、G05、M1、M2、M5、M50、Q1800、Q50、Q80  ·  来源：官方 3.x 版本接口
 
 > 新增：<br>
 > 1. 端口分流：支持配置IP归属地分流<br>
@@ -320,7 +295,6 @@
 ## 3.7.20 · Build202506041743
 
 <!-- ikuai-sources:[["免费版","8c8bf134ff0cdfaf9d1bfc0f44866c0664fdbeadfdf93e26567a2ed34447947e","### iKuai8_3.7.20_Build{build}","官网发布：2025-06-09 12:11:58 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2025-06-09 12:11:58 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -350,7 +324,6 @@
 ## 3.7.19 · Build202504071143
 
 <!-- ikuai-sources:[["企业版","612e184b01a6cf56a05c4a9e352239e203abafaf9eadd8e577c4066a3cef2575","### iKuai8_3.7.19_Enterprise_Build{build}","官网发布：2025-04-14 12:02:39 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2025-04-14 12:02:39 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -379,7 +352,6 @@
 ## 3.7.19 · Build202504071142
 
 <!-- ikuai-sources:[["免费版","130da36b80e239ac1e6109ee88e2415c12d25c11efdc7de98511440d3cc92f86","### iKuai8_3.7.19_Build{build}","官网发布：2025-04-08 10:20:12 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2025-04-08 10:20:12 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -408,7 +380,6 @@
 ## 3.7.18 · Build202501081618
 
 <!-- ikuai-sources:[["企业版","9063cf449ab7b52d3ade74ea531f0a844dfb7dc85f184f69f7eda4684a868f8a","### iKuai8_3.7.18_Build{build}","官网发布：2025-01-14 14:05:01 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2025-01-14 14:05:01 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -427,7 +398,6 @@
 ## 3.7.18 · Build202501081617
 
 <!-- ikuai-sources:[["免费版","6bcaba752c0a78839c0e7679c8187793ca1a35a7346a3fb5f3b65465d690f553","### iKuai8_3.7.18_Build{build}","官网发布：2025-01-13 10:32:40 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2025-01-13 10:32:40 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -446,7 +416,6 @@
 ## 3.7.17 · Build202412271044
 
 <!-- ikuai-sources:[["企业版","b7a6d1c61a6fce4ad46f721d6c1cd429092049bbb4e0f0a52dc6b3b8f60f3992","### iKuai8_3.7.17_Build{build}","官网发布：2024-12-27 15:52:18 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2024-12-27 15:52:18 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -473,7 +442,6 @@
 ## 3.7.17 · Build202412271043
 
 <!-- ikuai-sources:[["免费版","a07e0982bf68b6e3f86515e28d9a1402a8550fad36d5e07f5412974cab4192ca","### iKuai8_3.7.17_Build{build}","官网发布：2024-12-27 15:51:01 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2024-12-27 15:51:01 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -495,7 +463,6 @@
 ## 3.7.16 · Build202411141702
 
 <!-- ikuai-sources:[["企业版","e640c086c62cec9641fdc382b2c38d4d959043b30c4932445696f07ca424aeda","### iKuai8_3.7.16_Build{build}","官网发布：2024-11-18 10:54:57 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2024-11-18 10:54:57 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -522,7 +489,6 @@
 ## 3.7.16 · Build202411141700
 
 <!-- ikuai-sources:[["免费版","d480bf4fd1befe7fdee44f6787371eeca88aff9a3872def531202d2a4cd39723","### iKuai8_3.7.16_Build{build}","官网发布：2024-11-15 11:48:20 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2024-11-15 11:48:20 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -549,7 +515,6 @@
 ## 3.7.15 · Build202409251710
 
 <!-- ikuai-sources:[["企业版","85dbd6b3d4efcc47b963a3620fb8775a36589cd35410cb2e7406e94d4b6782e6","### iKuai8_3.7.15_Build{build}","官网发布：2024-09-25 17:40:49 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2024-09-25 17:40:49 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -579,7 +544,6 @@
 ## 3.7.15 · Build202409251708
 
 <!-- ikuai-sources:[["免费版","73e08d76309ec2550cac72312dc147cf6ff97184a4497489f18901f9464c6278","### iKuai8_3.7.15_Build{build}","官网发布：2024-09-25 17:25:40 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2024-09-25 17:25:40 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -606,7 +570,6 @@
 ## 3.7.14 · Build202408011115
 
 <!-- ikuai-sources:[["企业版","2019ac5e237c7f3cf87ea6972be686d10bc854cf82495c836eb7143871691e69","### iKuai8_3.7.14_Build{build}","官网发布：2024-08-02 10:15:18 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2024-08-02 10:15:18 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -630,7 +593,6 @@
 ## 3.7.14 · Build202408011011
 
 <!-- ikuai-sources:[["免费版","6732b3154a2c09854637f97f1a582407005baea4f7ddec2e3dae916a7f561ebe","### iKuai8_3.7.14_Build{build}","官网发布：2024-08-02 10:13:46 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2024-08-02 10:13:46 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -651,7 +613,6 @@
 ## 3.7.13 · Build202406212118
 
 <!-- ikuai-sources:[["企业版","af99614b02bbb9035aa692d1d8433c2b4dc47f970cf9d42c3307e6942054692d","### iKuai8_3.7.13_Build{build}","官网发布：2024-06-24 10:39:36 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2024-06-24 10:39:36 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -664,7 +625,6 @@
 ## 3.7.13 · Build202406212115
 
 <!-- ikuai-sources:[["免费版","ac9304f1b1af7964f255d8a0ef180de1d1ce8bc375035fb2026f506e96a7c312","### iKuai8_3.7.13_Build{build}","官网发布：2024-06-24 10:37:09 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2024-06-24 10:37:09 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -677,7 +637,6 @@
 ## 3.7.12 · Build202406112127
 
 <!-- ikuai-sources:[["企业版","8c1f67846afe77198fd1a7d8c2a40d64fb2a3af8e4b2ab11b5d757551251f7a1","### iKuai8_3.7.12_Build{build}","官网发布：2024-06-12 15:30:49 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2024-06-12 15:30:49 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -712,7 +671,6 @@
 ## 3.7.12 · Build202406112125
 
 <!-- ikuai-sources:[["免费版","e0ea7186c88f24b7649129ff09ede94268030ad5037b658c0b25da03221669e3","### iKuai8_3.7.12_Build{build}","官网发布：2024-06-12 15:29:43 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2024-06-12 15:29:43 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -745,7 +703,6 @@
 ## 3.7.11 · Build202403051042
 
 <!-- ikuai-sources:[["企业版","d483ba996567fb0352f95676786defe88e11d38293af5f63cd4d341fb11fe01b","### iKuai8_3.7.11_Build{build}","官网发布：2024-03-05 11:02:33 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2024-03-05 11:02:33 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -766,7 +723,6 @@
 ## 3.7.11 · Build202403051040
 
 <!-- ikuai-sources:[["免费版","e70d34a859f6b9554e4261df8e852edce75c4b8bed8c39aabf0ceccb11048d3e","### iKuai8_3.7.11_Build{build}","官网发布：2024-03-05 11:00:14 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2024-03-05 11:00:14 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -783,7 +739,6 @@
 ## 3.7.10 · Build202401231340
 
 <!-- ikuai-sources:[["企业版","3b25cf2e5e6ed4763329d9055e428a6d6b2de45c7ab2b5b1009f274cc4b24cad","### iKuai8_3.7.10_Build{build}","官网发布：2024-01-24 18:23:46 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2024-01-24 18:23:46 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -803,7 +758,6 @@
 ## 3.7.10 · Build202401231339
 
 <!-- ikuai-sources:[["免费版","d8a13ed7e0fc2d602dbd27bef85e19d5d2471e707e68d4fdd981d6e076c9f771","### iKuai8_3.7.10_Build{build}","官网发布：2024-01-24 18:21:11 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2024-01-24 18:21:11 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -823,7 +777,6 @@
 ## 3.7.9 · Build202401121851
 
 <!-- ikuai-sources:[["企业版","acddecddec49a8d2c6829e4bafe70156f5b1031bf6998d9443a0e12a8729e34e","### iKuai8_3.7.9_Build{build}","官网发布：2024-01-12 19:18:53 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2024-01-12 19:18:53 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -846,7 +799,6 @@
 ## 3.7.9 · Build202401121849
 
 <!-- ikuai-sources:[["免费版","6fef92248ca68d1966a7bd1d0ba9367de42f6b26f2619c9487bda8122f862fa9","### iKuai8_3.7.9_Build{build}","官网发布：2024-01-13 14:03:57 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2024-01-13 14:03:57 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -868,7 +820,6 @@
 ## 3.7.8 · Build202311201051
 
 <!-- ikuai-sources:[["企业版","5189c2be9180354e5de4f15e5cd8c91b28a49e7ef6f00f1511f3866858514e68","### iKuai8_3.7.8_Build{build}","官网发布：2023-11-22 10:34:46 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2023-11-22 10:34:46 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -915,7 +866,6 @@
 ## 3.7.8 · Build202311201048
 
 <!-- ikuai-sources:[["免费版","e6944d3b198336da62c014c7f75088f26408c2e173d8842766c1c9a211cb3f04","### iKuai8_3.7.8_Build{build}","官网发布：2023-11-21 16:30:56 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2023-11-21 16:30:56 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -934,7 +884,6 @@
 ## 3.7.7 · Build202311080959
 
 <!-- ikuai-sources:[["免费版","92c9e6388826062f88d38273b8aaac07047e5246aad4496f0f2f547099bd4ca1","### iKuai8_3.7.7_Build{build}","官网发布：2023-11-08 14:11:14 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2023-11-08 14:11:14 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -966,7 +915,6 @@
 ## 3.7.6 · Build202309081651
 
 <!-- ikuai-sources:[["免费版","104823898acdea2648ab97dd91a8af4107c5d90d37097c9696773d817a4c090f","### iKuai8_3.7.6_Build{build}","官网发布：2023-09-12 10:32:42 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2023-09-12 10:32:42 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -998,7 +946,6 @@
 ## 3.7.5 · Build202308081511
 
 <!-- ikuai-sources:[["企业版","feff14b72c33197dfc314577d6f411006912fde7d9bd686043c18004194fdcbe","### iKuai8_3.7.5_Build{build}","官网发布：2023-08-08 17:11:16 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2023-08-08 17:11:16 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -1033,7 +980,6 @@
 ## 3.7.5 · Build202308021413
 
 <!-- ikuai-sources:[["免费版","33b9409a92654c25a762c2e60eb7a8eba024f218f15083df52d5a5675a8b6605","### iKuai8_3.7.5_Build{build}","官网发布：2023-08-03 10:30:56 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2023-08-03 10:30:56 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1049,7 +995,6 @@
 ## 3.7.4 · Build202307111447
 
 <!-- ikuai-sources:[["免费版","f8533b7e8d82de69658428356499c12e2066337344d6ed815da84fb3b1f88dac","### iKuai8_3.7.4_Build{build}","官网发布：2023-07-12 10:53:49 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2023-07-12 10:53:49 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -1075,7 +1020,6 @@
 ## 3.7.3 · Build202305301310
 
 <!-- ikuai-sources:[["免费版","cecd3f35f5c69b2146090f6bba2e3afb66f59140e8b7d22de49e9886c8861530","### iKuai8_3.7.3_Build{build}","官网发布：2023-05-30 13:19:46 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2023-05-30 13:19:46 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -1099,7 +1043,6 @@
 ## 3.7.2 · Build202304211809
 
 <!-- ikuai-sources:[["企业版","8327779224b31b2869e435a675807e1631e140d3bad6bbc66947b798209fcb2c","### iKuai8_3.7.2_Build{build}","官网发布：2023-04-23 10:23:13 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2023-04-23 10:23:13 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -1135,7 +1078,6 @@
 ## 3.7.2 · Build202304211807
 
 <!-- ikuai-sources:[["免费版","e8764c28c3093a3b6fb3aa4a1ad34d91e8fc16b4b30a05709fe26ca540ab5dce","### iKuai8_3.7.2_Build{build}","官网发布：2023-04-21 18:30:25 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2023-04-21 18:30:25 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1153,7 +1095,6 @@
 ## 3.7.1 · Build202304060952
 
 <!-- ikuai-sources:[["免费版","b4443ea2ff97453596fc6a023b23623657b2d8106d8f32bbd60bde3cd1899e5c","### iKuai8_3.7.1_Build{build}","官网发布：2023-04-06 15:31:58 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2023-04-06 15:31:58 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -1176,7 +1117,6 @@
 ## 3.7.0 · Build202303201025
 
 <!-- ikuai-sources:[["免费版","e1c49d96cc7ee6b2614afe9a8616cf53ad4b53f5e835ea6a50ec51b9455f5a9b","### iKuai8_3.7.0_Build{build}","官网发布：2023-03-21 11:01:20 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2023-03-21 11:01:20 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -1208,7 +1148,6 @@
 ## 3.6.13 · Build202301131535
 
 <!-- ikuai-sources:[["企业版","fb6adb9ab78766cd4c1d16be11325201aedfdc91e10215612b183c64f63e7bf6","### iKuai8_3.6.13_Build{build}","官网发布：2023-01-13 17:49:19 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2023-01-13 17:49:19 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -1220,7 +1159,6 @@
 ## 3.6.13 · Build202301131532
 
 <!-- ikuai-sources:[["免费版","0fb9c2dd1c9850bc0eab7ca5b2beead468e89fb8ac6477c49c38ac68803a4a62","### iKuai8_3.6.13_Build{build}","官网发布：2023-01-13 17:47:57 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2023-01-13 17:47:57 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1232,7 +1170,6 @@
 ## 3.6.12 · Build202212231534
 
 <!-- ikuai-sources:[["企业版","d5d3fee49ed1c1947b2765688862479e41c4bb7fcb9de2ec7a59c7721a87f84d","### iKuai8_3.6.12_Build{build}","官网发布：2022-12-23 15:53:01 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2022-12-23 15:53:01 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -1249,7 +1186,6 @@
 ## 3.6.12 · Build202212231532
 
 <!-- ikuai-sources:[["免费版","9bb221cad170c116cb98c7cef7c9bc6e11387f6f6a38322ce3149f677ca32fcd","### iKuai8_3.6.12_Build{build}","官网发布：2022-12-23 15:52:11 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2022-12-23 15:52:11 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1266,7 +1202,6 @@
 ## 3.6.11 · Build202211181235
 
 <!-- ikuai-sources:[["免费版","8a38ea52fccf1d2da1265489883def680aca79222c1c5bae3245ca75df828e97","### iKuai8_3.6.11_Build{build}","官网发布：2022-11-18 14:18:59 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2022-11-18 14:18:59 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1285,7 +1220,6 @@
 ## 3.6.10 · Build202210251916
 
 <!-- ikuai-sources:[["企业版","b7a30eeb346a0ad99a731b5b0326d67bf75e682a37ae255d7780b77c00d5bf0e","### iKuai8_3.6.10_Build{build}","官网发布：2022-10-26 14:47:38 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2022-10-26 14:47:38 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -1297,7 +1231,6 @@
 ## 3.6.10 · Build202210251458
 
 <!-- ikuai-sources:[["免费版","89494b4291b01edb22cfb05c3536e96122113881529d6def913f4010da6a229a","### ikuai8_3.6.10_Build{build}","官网发布：2022-10-26 14:26:52 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2022-10-26 14:26:52 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1309,7 +1242,6 @@
 ## 3.6.9 · Build202210211048
 
 <!-- ikuai-sources:[["企业版","727e3e423a853e892e248f5f812b94cd88e8fc403ca4eec59ce8e5c6c62f04c5","### iKuai8_3.6.9_Build{build}","官网发布：2022-10-21 13:11:51 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2022-10-21 13:11:51 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -1333,7 +1265,6 @@
 ## 3.6.9 · Build202210211047
 
 <!-- ikuai-sources:[["免费版","d62be1777dc9f4f7e6ac815b27d6d232875a90d485d28fe41ad4c22310d64461","### ikuai8_3.6.9_Build{build}","官网发布：2022-10-21 13:10:41 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2022-10-21 13:10:41 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -1357,7 +1288,6 @@
 ## 3.6.8 · Build202209290853
 
 <!-- ikuai-sources:[["企业版","845d84bb786d27128fcb518e49a4920075f8c52f2b5f0fbd33aea8799bc55987","### iKuai8_3.6.8_Build{build}","官网发布：2022-10-08 14:27:59 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2022-10-08 14:27:59 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -1391,7 +1321,6 @@
 ## 3.6.8 · Build202209231604
 
 <!-- ikuai-sources:[["免费版","963499377dbc82afbd7b87a91c389655811240d4a0942129adc6e55af9f17197","### ikuai8_3.6.8_Build{build}","官网发布：2022-09-26 10:49:37 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2022-09-26 10:49:37 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1409,7 +1338,6 @@
 ## 3.6.7 · Build202208301257
 
 <!-- ikuai-sources:[["免费版","60c83feedba04978ff4e991a56954a321b082da4bca52aa5941ac673769f8381","### ikuai8_3.6.7_Build{build}","官网发布：2022-08-31 10:52:38 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2022-08-31 10:52:38 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -1435,7 +1363,6 @@
 ## 3.6.6 · Build202208121750
 
 <!-- ikuai-sources:[["免费版","1a5819a71bd0540ad7dae898c43fd49f9c4c76a90021b506ed955bdcfd272b17","### ikuai8_3.6.6_Build{build}","官网发布：2022-08-15 16:58:15 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2022-08-15 16:58:15 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -1468,7 +1395,6 @@
 ## 3.6.5 · Build202206061406
 
 <!-- ikuai-sources:[["企业版","2ed2031134e75738bf9172df6c41a7abe5de982ac8806c9c2d74262b079a280c","### iKuai8_3.6.5_Build{build}","官网发布：2022-06-06 16:21:57 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2022-06-06 16:21:57 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -1504,7 +1430,6 @@
 ## 3.6.5 · Build202206011520
 
 <!-- ikuai-sources:[["免费版","d9416bfe154486f5b0bba12311a92c47280791175f7f7ead000421cfa71710b4","### ikuai8_3.6.5_Build{build}","官网发布：2022-06-01 17:31:00 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2022-06-01 17:31:00 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1525,7 +1450,6 @@
 ## 3.6.4 · Build202205181711
 
 <!-- ikuai-sources:[["免费版","bb2ebfddd0740c84977a5c92b026d4680b92014cf5be46ea20238404908f677b","### ikuai8_3.6.4_Build{build}","官网发布：2022-05-19 13:12:35 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2022-05-19 13:12:35 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -1563,7 +1487,6 @@
 ## 3.6.3 · Build202204081243
 
 <!-- ikuai-sources:[["企业版","d96e7d993cbcc4e7d6a80fea0aed78d5ab7f8cbb50fa645f5d93d723a0073102","### iKuai8_3.6.3_Build{build}","官网发布：2022-04-08 12:43:34 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2022-04-08 12:43:34 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -1590,7 +1513,6 @@
 ## 3.6.3 · Build202204071133
 
 <!-- ikuai-sources:[["免费版","414c22ccc79925d8d08b0eac3e4c4045d63fc3715942df726fa56cd55e2c63c4","### ikuai8_3.6.3_Build{build}","官网发布：2022-04-07 17:32:22 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2022-04-07 17:32:22 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1611,7 +1533,6 @@
 ## 3.6.2 · Build202203291450
 
 <!-- ikuai-sources:[["免费版","7a3f00ae052f3b9046e3b79e72c90775498bf0f960e8dd4fb5e548928e8665aa","### ikuai8_3.6.2_Build{build}","官网发布：2022-03-29 15:44:07 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2022-03-29 15:44:07 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -1643,7 +1564,6 @@
 ## 3.6.1 · Build202203070900
 
 <!-- ikuai-sources:[["免费版","ca2e2c10447abdcb1d56f75f77283d52d595d6d33860dded4120f3dec5f264e5","### ikuai8_3.6.1_Build{build}","官网发布：2022-03-07 14:11:15 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2022-03-07 14:11:15 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1672,7 +1592,6 @@
 ## 3.6.0 · Build202202171351
 
 <!-- ikuai-sources:[["免费版","cb76c3d68cf3c72e06a8bf52c915297df575b86ceb704816c9a0409ffa325a02","### ikuai8_3.6.0_Build{build}","官网发布：2022-02-17 16:42:52 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2022-02-17 16:42:52 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -1704,7 +1623,6 @@
 ## 3.5.12 · Build202201211054
 
 <!-- ikuai-sources:[["企业版","4c527af211128ddbfe9f0c794e5ed9693e654b40bd33c43f9fb77f6a33a3f953","### iKuai8_3.5.12_Enterprise_Build{build}","官网发布：2022-01-22 17:47:32 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2022-01-22 17:47:32 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -1719,7 +1637,6 @@
 ## 3.5.12 · Build202201211053
 
 <!-- ikuai-sources:[["免费版","69ccbc193bc735621f58ecc7f212d2c37a50a2ebf572d085f17bee6238176798","### ikuai8_3.5.12_Build{build}","官网发布：2022-01-22 17:45:17 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2022-01-22 17:45:17 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1734,7 +1651,6 @@
 ## 3.5.11 · Build202112031204
 
 <!-- ikuai-sources:[["企业版","d2145a639507b54d9387617826f2f13f6cd550d28081707445c331bf52c10d5a","### iKuai8_3.5.11_Enterprise_Build{build}","官网发布：2021-12-06 15:49:15 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2021-12-06 15:49:15 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -1755,7 +1671,6 @@
 ## 3.5.11 · Build202112031159
 
 <!-- ikuai-sources:[["免费版","b24f56bfa4883257e334ffdd99b015f1257561408468a8c8424094bb6e6d112e","### ikuai8_3.5.11_Build{build}","官网发布：2021-12-06 15:43:23 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2021-12-06 15:43:23 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -1776,7 +1691,6 @@
 ## 3.5.10 · Build202110131033
 
 <!-- ikuai-sources:[["免费版","c3d41f28f65462fbeda93c89bc72f136916519d8728dfc8befa03e8a174a830a","### ikuai8_3.5.10_Build{build}","官网发布：2021-10-13 16:21:04 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2021-10-13 16:21:04 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1787,7 +1701,6 @@
 ## 3.5.9 · Build202109301157
 
 <!-- ikuai-sources:[["免费版","e2403fef4be24399640d752271f0fee8f3e207b9a09fe8d865bd30397ea75fc7","### ikuai8_3.5.9_Build{build}","官网发布：2021-09-30 15:21:03 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2021-09-30 15:21:03 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1803,7 +1716,6 @@
 ## 3.5.8 · Build202109231226
 
 <!-- ikuai-sources:[["免费版","7a51885ee19e711cecc0b5bfc9177ba748db501bdfb02c1b8d88485ff2a28a7f","### ikuai8_3.5.8_Build{build}","官网发布：2021-09-24 17:06:46 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2021-09-24 17:06:46 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1823,7 +1735,6 @@
 ## 3.5.7 · Build202108241611
 
 <!-- ikuai-sources:[["免费版","73bbbab6803a9c4f278fa658107a5c424a6c1d14bcc8b27189609f8173396ca0","### ikuai8_3.5.7_Build{build}","官网发布：2021-08-25 16:27:40 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2021-08-25 16:27:40 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -1844,7 +1755,6 @@
 ## 3.5.6 · Build202107261931
 
 <!-- ikuai-sources:[["免费版","0a414cf3a8af9464b7733f7f50e6c049ff4a9448c196826e4192f7f5d326b870","### ikuai8_3.5.6_Build{build}","官网发布：2021-07-26 19:43:34 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2021-07-26 19:43:34 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1859,7 +1769,6 @@
 ## 3.5.5 · Build202107212134
 
 <!-- ikuai-sources:[["免费版","f599bad5a0548cb1522cd696df3f44ea968c3097355a982a87010c7327c96c33","### ikuai8_3.5.5_Build{build}","官网发布：2021-07-22 13:53:47 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2021-07-22 13:53:47 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -1893,7 +1802,6 @@
 ## 3.5.4 · Build202105141825
 
 <!-- ikuai-sources:[["企业版","ee2c044dc1f01119f28eaea98768444b1ab037bb2a1edbc200e44cf762722759","### iKuai8_3.5.4_Enterprise_Build{build}","官网发布：2021-05-08 13:56:40 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2021-05-08 13:56:40 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -1931,7 +1839,6 @@
 ## 3.5.4 · Build202104211550
 
 <!-- ikuai-sources:[["免费版","456ae3a84a19a35349f84d9714952e81c8b12131a0377b8ed563f8bf7a1ebb9c","### ikuai8_3.5.4_Build{build}","官网发布：2021-04-22 12:22:28 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2021-04-22 12:22:28 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1943,7 +1850,6 @@
 ## 3.5.3 · Build202104151018
 
 <!-- ikuai-sources:[["免费版","f6e499906fe24ce794fc055cec6ca275f068a9e35c797fb81a3af2727175af44","### ikuai8_3.5.3_Build{build}","官网发布：2021-04-15 10:28:59 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2021-04-15 10:28:59 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -1964,7 +1870,6 @@
 ## 3.5.2 · Build202103290906
 
 <!-- ikuai-sources:[["免费版","44fa14ea81da795b12c1582d50b126c81718a741a483164015ddc8c9a8bcd088","### ikuai8_3.5.2_Build{build}","官网发布：2021-03-29 13:41:47 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2021-03-29 13:41:47 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -1993,7 +1898,6 @@
 ## 3.5.1 · Build202103100841
 
 <!-- ikuai-sources:[["免费版","b91ed05f7faac32fb0de9c52629f059de7d54f23fbc2d047c1fb29449d3ccf45","### ikuai8_3.5.1_Build{build}","官网发布：2021-03-10 10:28:20 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2021-03-10 10:28:20 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -2005,7 +1909,6 @@
 ## 3.5.0 · Build202103081445
 
 <!-- ikuai-sources:[["免费版","3c697bceb280784a1b1372af19eb416aa69c9b8453b33bb3d674ea5ccadeb700","### ikuai8_3.5.0_Build{build}","官网发布：2021-03-08 15:15:23 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2021-03-08 15:15:23 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2035,7 +1938,6 @@
 ## 3.4.9 · Build202101291909
 
 <!-- ikuai-sources:[["企业版","6d0432feb84fe0a336b378c5ef090e2351a20c3714e6c502cff30d9fd1d42847","### iKuai8_3.4.9_Enterprise_Build{build}","官网发布：2021-02-20 10:17:40 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2021-02-20 10:17:40 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -2047,7 +1949,6 @@
 ## 3.4.9 · Build202101291904
 
 <!-- ikuai-sources:[["免费版","7ef3eb3dcd91999a1ec1b736e27af1b6e034468e95ac1c3740fba2e520c39c4f","### ikuai8_3.4.9_Build{build}","官网发布：2021-02-01 17:31:56 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2021-02-01 17:31:56 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -2060,7 +1961,6 @@
 ## 3.4.8 · Build202101041353
 
 <!-- ikuai-sources:[["企业版","5bb05f31d81333f0e2c5ceafd29dec3120eeeb67412fe7f51940be0ab5b42964","### iKuai8_3.4.8_Enterprise_Build{build}","官网发布：2021-01-05 14:39:56 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"],["企业版","927955fdd9b9373ad78a4bcb55f7162de2c0b0347812cd0ca6496c915e6d2831","### 3.4.8_Enterprise_Build{build}","官网发布：2021-01-05 14:39:43 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2021-01-05 14:39:43 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)；官网发布：2021-01-05 14:39:56 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -2107,7 +2007,6 @@
 ## 3.4.8 · Build202012291059
 
 <!-- ikuai-sources:[["免费版","ae7c0f77beb88c2e3956ac967b3b19f37487a7e26f516f755f01b260aef5e5ce","### ikuai8_3.4.8_Build{build}","官网发布：2020-12-29 11:53:48 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-12-29 11:53:48 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2127,7 +2026,6 @@
 ## 3.4.7 · Build202012140950
 
 <!-- ikuai-sources:[["免费版","2bd126449bb68074d575089987eb966298d9aef29eb47fe7529791ae57f34481","### ikuai8_3.4.7_Build{build}","官网发布：2020-12-14 13:17:02 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-12-14 13:17:02 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **优化功能**
 
@@ -2142,7 +2040,6 @@
 ## 3.4.6 · Build202011301134
 
 <!-- ikuai-sources:[["免费版","8c8f8197cb5d2f6f732210c1d1f0d727de90fbc9dce3ffd01c315270fb958f57","### ikuai8_3.4.6_Build{build}","官网发布：2020-11-30 13:31:56 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-11-30 13:31:56 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -2167,7 +2064,6 @@
 ## 3.4.5 · Build202011091521
 
 <!-- ikuai-sources:[["免费版","443d555086bd2e06535b7ff5ec6b3b8606e9534a16665b65e349a1b0ddbf66ba","### ikuai8_3.4.5_Build{build}","官网发布：2020-11-09 15:54:33 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-11-09 15:54:33 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2197,7 +2093,6 @@
 ## 3.4.4 · Build202010091231
 
 <!-- ikuai-sources:[["企业版","e6de4b4ea28f2ab4c1d19ef284966b9ffadedb6b596d45ef7e949acf63372ea1","### iKuai8_3.4.4_Enterprise_Build{build}","官网发布：2020-10-09 14:34:55 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2020-10-09 14:34:55 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -2214,7 +2109,6 @@
 ## 3.4.4 · Build202009281633
 
 <!-- ikuai-sources:[["免费版","9c36ff0ab5cadab8ad6c92d98a53a741e0e80338340eabc484f17016219efffa","### ikuai8_3.4.4_Build{build}","官网发布：2020-09-29 09:40:24 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-09-29 09:40:24 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -2232,7 +2126,6 @@
 ## 3.4.3 · Build202009171210
 
 <!-- ikuai-sources:[["企业版","947104cfb70fe932828097ffa384f4b1b9c963a2d60c51f9a6bb74243bb7e97d","### iKuai8_3.4.3_Enterprise_Build{build}","官网发布：2020-09-17 13:10:31 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2020-09-17 13:10:31 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -2252,7 +2145,6 @@
 ## 3.4.3 · Build202009141915
 
 <!-- ikuai-sources:[["免费版","88165f1de0cc5b79d9676948474f19211e3ab04ba7d90b7a6e97ed8574fe83f6","### ikuai8_3.4.3_Build{build}","官网发布：2020-09-15 09:55:56 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-09-15 09:55:56 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -2272,7 +2164,6 @@
 ## 3.4.2 · Build202009041019
 
 <!-- ikuai-sources:[["免费版","42e81b23f25c676980aa6b5d6b8a1f518ee5093f3b0eeb982c8eaf5ac447c978","### ikuai8_3.4.2_Build{build}","官网发布：2020-09-04 10:45:35 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-09-04 10:45:35 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -2283,7 +2174,6 @@
 ## 3.4.1 · Build202008311040
 
 <!-- ikuai-sources:[["免费版","999d4542cbe52655f2cec4e63c1e0bc1ac2c3ede8b25cac7c5650a5e4029586f","### ikuai8_3.4.1_Build{build}","官网发布：2020-08-31 11:40:13 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-08-31 11:40:13 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2311,7 +2201,6 @@
 ## 3.4.0 · Build202007281918
 
 <!-- ikuai-sources:[["免费版","45890fd32a20d117f9234fc17f1effa10072be7d892c192b8b89dc37a0192b87","### ikuai8_3.4.0_Build{build}","官网发布：2020-07-29 09:39:27 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-07-29 09:39:27 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2347,7 +2236,6 @@
 ## 3.3.9 · Build202006150942
 
 <!-- ikuai-sources:[["免费版","43de2d94e4924b45cef1730cf4e2e47f86e55d85a1086b2cf007307cbe3c1edd","### ikuai8_3.3.9_Build{build}","官网发布：2020-06-15 12:18:26 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-06-15 12:18:26 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2369,7 +2257,6 @@
 ## 3.3.8 · Build202006021453
 
 <!-- ikuai-sources:[["免费版","14fa3381e745f4ed28c2a66a97e262ca6017b2c91d0eee893f7824354a947b79","### ikuai8_3.3.8_Build{build}","官网发布：2020-06-03 11:30:07 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-06-03 11:30:07 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2397,7 +2284,6 @@
 ## 3.3.7 · Build202005081035
 
 <!-- ikuai-sources:[["免费版","d25dd492922da092b2a5995c873249e675afc536cbed832f87657f2ad91361f4","### ikuai8_3.3.7_Build{build}","官网发布：2020-05-08 11:16:43 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-05-08 11:16:43 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2422,7 +2308,6 @@
 ## 3.3.6 · Build202005071058
 
 <!-- ikuai-sources:[["免费版","2bf34fda209221df1d0c07ef7c2d6731f73ae292df592dd9eae6415c341e2108","### ikuai8_3.3.6_Build{build}","官网发布：2020-05-07 15:09:35 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-05-07 15:09:35 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2446,7 +2331,6 @@
 ## 3.3.5 · Build202004211952
 
 <!-- ikuai-sources:[["免费版","cb5619c051fb702a72df8218ff4d0e963f7fb6510f05930e5b04c01fc64cafcf","### ikuai8_3.3.5_Build{build}","官网发布：2020-04-22 11:53:11 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-04-22 11:53:11 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2475,7 +2359,6 @@
 ## 3.3.4 · Build202003231122
 
 <!-- ikuai-sources:[["免费版","6b4dfd7edb94f53db1a27dcfa73a3727b5e18398c47d0530757aac59f1ddd2f0","### ikuai8_3.3.4_Build{build}","官网发布：2020-03-24 11:55:49 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-03-24 11:55:49 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2498,7 +2381,6 @@
 ## 3.3.3 · Build202002040918
 
 <!-- ikuai-sources:[["免费版","d47ebe0f1272bc943f8f5dc6c6371167f5564ff450e7306e342931ffbd32c780","### ikuai8_3.3.3_Build{build}","官网发布：2020-02-04 10:08:51 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-02-04 10:08:51 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2518,7 +2400,6 @@
 ## 3.3.2 · Build202001091117
 
 <!-- ikuai-sources:[["免费版","742043934a5579b301d9efc044bf99de83e8fe5d8d6a5d8b93c9644d57c63aed","### ikuai8_3.3.2_Build{build}","官网发布：2020-01-09 14:35:13 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-01-09 14:35:13 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -2531,7 +2412,6 @@
 ## 3.3.1 · Build202001071211
 
 <!-- ikuai-sources:[["免费版","a8cd51b713bc4790ee6c0da0fe61099314d167cacb3586b40a677c5085d72921","### ikuai8_3.3.1_Build{build}","官网发布：2020-01-07 14:44:15 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2020-01-07 14:44:15 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2560,7 +2440,6 @@
 ## 3.3.0 · Build201912171705
 
 <!-- ikuai-sources:[["免费版","b83661b69abaf7a21c9fed8b065855f186270ae15d99ef41d99815de2fb909ec","### ikuai8_3.3.0_Build{build}","官网发布：2019-12-18 10:44:56 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-12-18 10:44:56 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2595,7 +2474,6 @@
 ## 3.2.9 · Build201911180955
 
 <!-- ikuai-sources:[["企业版","394d13aee0c97a0d3c0fdd21120b19d647abebca32fd31ea0898fd2eeb96f660","### iKuai8_3.2.9_Enterprise_Build{build}","官网发布：2019-11-21 10:26:37 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2019-11-21 10:26:37 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -2615,7 +2493,6 @@
 ## 3.2.9 · Build201911151520
 
 <!-- ikuai-sources:[["免费版","84924d9411b0415c82b015791fc4a64f85cc9dc092452116dcbdb39ed787b843","### ikuai8_3.2.9_Build{build}","官网发布：2019-11-18 12:10:10 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-11-18 12:10:10 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -2635,7 +2512,6 @@
 ## 3.2.8 · Build201910171328
 
 <!-- ikuai-sources:[["企业版","55be731643ce0ae8804d8e77a9adb1b6fc560f57817218d2fd766e0b89e5f5a4","### iKuai8_3.2.8_Enterprise_Build{build}","官网发布：2019-10-21 11:44:25 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2019-10-21 11:44:25 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -2656,7 +2532,6 @@
 ## 3.2.8 · Build201910101758
 
 <!-- ikuai-sources:[["免费版","59af5a829d1855a10b79350945b9b64a7e2bc7e7c02ad53e1244098520ded11e","### ikuai8_3.2.8_Build{build}","官网发布：2019-10-12 10:54:23 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-10-12 10:54:23 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2679,7 +2554,6 @@
 ## 3.2.7 · Build201909201024
 
 <!-- ikuai-sources:[["企业版","6d4e69747bc1cae4ac88e9e90544f5ec2468ba5eab6a74d3eb6d4db9735293cd","### iKuai8_3.2.7_Enterprise_Build{build}","官网发布：2019-09-20 10:00:00 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2019-09-20 10:00:00 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -2697,7 +2571,6 @@
 ## 3.2.7 · Build201909101852
 
 <!-- ikuai-sources:[["免费版","bbf8dd894dfd0df0987803466812713e8fe86bbd31a0c925074a399d3a5ad645","### ikuai8_3.2.7_Build{build}","官网发布：2019-09-11 15:12:54 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-09-11 15:12:54 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -2716,7 +2589,6 @@
 ## 3.2.6 · Build201908261121
 
 <!-- ikuai-sources:[["企业版","35e74a7a5b91ab1f7406b4f476a8422971c3f3bff3f7afc428856d8d0f60fe23","### iKuai8_3.2.6_Enterprise_Build{build}","官网发布：2019-08-27 12:03:22 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2019-08-27 12:03:22 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -2762,7 +2634,6 @@
 ## 3.2.6 · Build201908261120
 
 <!-- ikuai-sources:[["免费版","619c882b972693badf813ab9490b50e5c033ba51d0aa2e4e9dc191bf1fe881bd","### ikuai8_3.2.6_Build{build}","官网发布：2019-08-26 12:29:34 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-08-26 12:29:34 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -2780,7 +2651,6 @@
 ## 3.2.5 · Build201908191404
 
 <!-- ikuai-sources:[["免费版","a00f0f0c1ce28bb79219fa3af9b3698d1c1420113baf68fabdb45ce902721a4a","### ikuai8_3.2.5_Build{build}","官网发布：2019-08-20 10:00:07 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-08-20 10:00:07 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2824,7 +2694,6 @@
 ## 3.2.4 · Build201907151220
 
 <!-- ikuai-sources:[["免费版","2672b357b49c6750f519e77746f2f4698a3d8ec61c2b784bf93b4c9cd98471c3","### ikuai8_3.2.4_Build{build}","官网发布：2019-07-16 14:44:29 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-07-16 14:44:29 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -2839,7 +2708,6 @@
 ## 3.2.3 · Build201907041834
 
 <!-- ikuai-sources:[["免费版","7884ec2d712992b23a5d1145803ffbf47e005e565a4968160df8b3fceaff61d5","### ikuai8_3.2.3_Build{build}","官网发布：2019-07-08 16:54:00 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-07-08 16:54:00 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2869,7 +2737,6 @@
 ## 3.2.2 · Build201906191124
 
 <!-- ikuai-sources:[["企业版","5c797a5894ce5e536b94a214f81b1cd3ffa40d464f7ada039f304ccbdd584082","### iKuai8_3.2.2_Enterprise_Build{build}","官网发布：2019-06-20 11:26:37 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2019-06-20 11:26:37 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -2911,7 +2778,6 @@
 ## 3.2.2 · Build201906171500
 
 <!-- ikuai-sources:[["免费版","3739ab55cf9c04291647e422eefc2ea56ac3150fa151802d89e4ca3ec65cd34c","### ikuai8_3.2.2_Build{build}","官网发布：2019-06-17 15:08:22 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-06-17 15:08:22 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -2928,7 +2794,6 @@
 ## 3.2.1 · Build201906121726
 
 <!-- ikuai-sources:[["免费版","f04b73e583a3c7a266ee0e2a9f53034129e8445ed798636171dce24c27c8648c","### ikuai8_3.2.1_Build{build}","官网发布：2019-06-12 17:39:03 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-06-12 17:39:03 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2946,7 +2811,6 @@
 ## 3.2.0 · Build201906041003
 
 <!-- ikuai-sources:[["免费版","cad3064fc044d82cd69d1aa0f14603f95104531bc22c2995456b2eca53d76e9b","### ikuai8_3.2.0_Build{build}","官网发布：2019-06-04 11:16:47 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-06-04 11:16:47 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -2986,7 +2850,6 @@
 ## 3.1.9 · Build201904281025
 
 <!-- ikuai-sources:[["企业版","fe1ab4c73bd6729e53404d833f35b0489f2e10926952e0fa63f92877806e3a88","### iKuai8_3.1.9_Enterprise_Build{build}","官网发布：2019-04-28 14:16:54 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2019-04-28 14:16:54 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -3002,7 +2865,6 @@
 ## 3.1.9 · Build201904221629
 
 <!-- ikuai-sources:[["免费版","8bc4b1d67f9f565993cf020a6f0ebf146d114790ddfa5761f4ff415927879da3","### ikuai8_3.1.9_Build{build}","官网发布：2019-04-23 18:22:55 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-04-23 18:22:55 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -3018,7 +2880,6 @@
 ## 3.1.8 · Build201904121112
 
 <!-- ikuai-sources:[["企业版","b6fb30bb4b22669cbaa12366cf82941c68d37ff0d6b341ad43cc8d3a1c7a7310","### iKuai8_3.1.8_Enterprise_Build{build}","官网发布：2019-04-16 11:27:55 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2019-04-16 11:27:55 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -3039,7 +2900,6 @@
 ## 3.1.8 · Build201904121110
 
 <!-- ikuai-sources:[["免费版","e53dd91784243b406712b79990f77c0e38e6167b4a8cfafb7b0a22723ca15703","### ikuai8_3.1.8_Build{build}","官网发布：2019-04-12 14:34:46 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-04-12 14:34:46 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -3060,7 +2920,6 @@
 ## 3.1.7 · Build201903181458
 
 <!-- ikuai-sources:[["企业版","2168ea5e6180de229794eeeb77ea826dc2e0df93d512a739aa8e56fdfd9947bc","### iKuai8_3.1.7_Enterprise_Build{build}","官网发布：2019-03-19 13:26:31 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"],["企业版","6914e1481192e67f163cbdb38fc4c7a5293a0f5ad743f62bfb2320cef3a27855","### 3.1.7_Enterprise_Build{build}","官网发布：2019-03-19 13:25:46 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2019-03-19 13:25:46 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)；官网发布：2019-03-19 13:26:31 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -3077,7 +2936,6 @@
 ## 3.1.7 · Build201903181437
 
 <!-- ikuai-sources:[["免费版","29ef093811304007f9dc0fcac632afaefc72d59283f2f398f740b970d2d0877f","### ikuai8_3.1.7_Build{build}","官网发布：2019-03-18 15:26:08 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-03-18 15:26:08 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -3093,7 +2951,6 @@
 ## 3.1.6 · Build201903061009
 
 <!-- ikuai-sources:[["企业版","fc00f0c341a2e93f56a075636a2bc24a7370934eb4b07d8cfb1346d4c5b9b2dd","### iKuai8_3.1.6_Enterprise_Build{build}","官网发布：2019-03-07 11:53:53 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2019-03-07 11:53:53 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -3114,7 +2971,6 @@
 ## 3.1.6 · Build201903040937
 
 <!-- ikuai-sources:[["免费版","3ca22bc455895b4471ea17e3b212b21d257a44727109c81a5942eec39359e468","### ikuai8_3.1.6_Build{build}","官网发布：2019-03-04 15:58:22 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-03-04 15:58:22 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -3135,7 +2991,6 @@
 ## 3.1.5 · Build201901241133
 
 <!-- ikuai-sources:[["免费版","415e4600a2360447e425ecdb40583bbcd54a242505471953caaa4fe7982dc2b9","### ikuai8_3.1.5_Build{build}","官网发布：2019-01-24 11:57:25 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-01-24 11:57:25 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -3161,7 +3016,6 @@
 ## 3.1.4 · Build201901081017
 
 <!-- ikuai-sources:[["免费版","35d3ca4063357587123a57468fb79c0e6bf4091e92bfb4068d1a3d0ed527e515","### ikuai8_3.1.4_Build{build}","官网发布：2019-01-22 13:03:37 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2019-01-22 13:03:37 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -3197,7 +3051,6 @@
 ## 3.1.3 · Build201812191022
 
 <!-- ikuai-sources:[["免费版","54a625923f6a94657ab55f833300fe2bbbb47f8a91efe4031f1eb243e2c451de","### ikuai8_3.1.3_Build{build}","官网发布：2018-12-19 14:03:42 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2018-12-19 14:03:42 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -3217,12 +3070,9 @@
 <!-- /ikuai-sources -->
 
 
-## 未标注 Build 的官网日志
-
-### 企业版 · iKuai8_3.7.25_Enterprise
+## 企业版 · iKuai8_3.7.25_Enterprise
 
 <!-- ikuai-sources:[["企业版","2ec13d3d71099c91885a675f74fcf94d39d4c8a13d7a683b1417b4f022761546","### iKuai8_3.7.25_Enterprise","官网发布：2026-09-03 11:49:24 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2026-09-03 11:49:24 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -3230,10 +3080,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_x32_3.5.10_Enterprise
+## 企业版 · iKuai8_x32_3.5.10_Enterprise
 
 <!-- ikuai-sources:[["企业版","d93551524556f83149c057f29e7eea137d1b0e217a96b4455bab5f7b7d558570","### iKuai8_x32_3.5.10_Enterprise","官网发布：2021-10-15 20:59:38 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2021-10-15 20:59:38 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -3277,10 +3126,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.4.2_Enterprise
+## 企业版 · iKuai8_3.4.2_Enterprise
 
 <!-- ikuai-sources:[["企业版","9d6d75abbeac7be6fa015af95e4b057648d5b9df9a079cafece7e666f3745b70","### iKuai8_3.4.2_Enterprise","官网发布：2020-09-04 10:48:25 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2020-09-04 10:48:25 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -3321,10 +3169,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.3.4_Enterprise
+## 企业版 · iKuai8_3.3.4_Enterprise
 
 <!-- ikuai-sources:[["企业版","0ce5d109cf50dd938e21ff8a71d34ac5e17ef34156714131fe89d555977e4147","### iKuai8_3.3.4_Enterprise","官网发布：2020-04-09 11:51:54 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2020-04-09 11:51:54 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -3344,10 +3191,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.3.3_Enterprise
+## 企业版 · iKuai8_3.3.3_Enterprise
 
 <!-- ikuai-sources:[["企业版","558b151c71a4ef6eacc6ed9f2972e19caa1fbff2833dc9942d707b94bd10c90c","### iKuai8_3.3.3_Enterprise","官网发布：2020-02-10 11:33:05 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2020-02-10 11:33:05 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -3383,10 +3229,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.1.8_Enterprise
+## 企业版 · iKuai8_3.1.8_Enterprise
 
 <!-- ikuai-sources:[["企业版","343cceba5a3701f10b61fc8b974fc2ace31e1cd2b81dd1df91e6b9d52f5be8df","### iKuai8_3.1.8_Enterprise","官网发布：2019-04-16 11:26:26 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2019-04-16 11:26:26 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -3404,10 +3249,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.1.6_Enterprise
+## 企业版 · iKuai8_3.1.6_Enterprise
 
 <!-- ikuai-sources:[["企业版","cd283b3aa0987755724b25b0842a749c96e089294c29f07eb71992ebf395fc0a","### iKuai8_3.1.6_Enterprise","官网发布：2019-03-07 11:54:12 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2019-03-07 11:54:12 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -3425,10 +3269,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.1.5_Enterprise
+## 企业版 · iKuai8_3.1.5_Enterprise
 
 <!-- ikuai-sources:[["企业版","f7476ca0c2892e458c9557ed982de733ffa001bc980841b3fef567d1931d87ba","### iKuai8_3.1.5_Enterprise","官网发布：2019-01-24 16:45:51 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2019-01-24 16:45:51 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -3453,10 +3296,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.1.4_Enterprise
+## 企业版 · iKuai8_3.1.4_Enterprise
 
 <!-- ikuai-sources:[["企业版","9e5824584da2bdf63ca405a7215d7cc31456fc2ad5b8b5d88a0981cd4b9f85db","### iKuai8_3.1.4_Enterprise","官网发布：2019-01-08 15:35:00 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2019-01-08 15:35:00 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -3490,10 +3332,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.1.3_Enterprise（Q80/M1/A120）
+## 企业版 · iKuai8_3.1.3_Enterprise（Q80/M1/A120）
 
 <!-- ikuai-sources:[["企业版","c8b28200b89e5b58d8bf25424f52e40a751ba048083c282025957097c89ba0e1","### iKuai8_3.1.3_Enterprise（Q80/M1/A120）","官网发布：2018-12-11 15:55:40 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2018-12-11 15:55:40 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -3537,10 +3378,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.1.3_Enterprise（x86）
+## 企业版 · iKuai8_3.1.3_Enterprise（x86）
 
 <!-- ikuai-sources:[["企业版","1ff755f1868abe28503cd016153ff009af88c0b2a92f881f6f680a245e0e2880","### iKuai8_3.1.3_Enterprise（x86）","官网发布：2018-12-07 15:53:17 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2018-12-07 15:53:17 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -3560,10 +3400,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.1.2_Enterprise
+## 企业版 · iKuai8_3.1.2_Enterprise
 
 <!-- ikuai-sources:[["企业版","2559d8be3ae67af95e23f146f4755d415e3f7faf7b8152fc4320e8b5e10bc891","### iKuai8_3.1.2_Enterprise","官网发布：2018-11-23 15:51:50 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2018-11-23 15:51:50 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -3592,10 +3431,9 @@
 <!-- /ikuai-sources -->
 
 
-### 免费版 · iKuai_3.1.2_Build
+## 免费版 · iKuai_3.1.2_Build
 
 <!-- ikuai-sources:[["免费版","4e2deeb083270501c1c074faf1f004e55b8f29a7e143af700d0d1baabcc90257","### iKuai_3.1.2_Build","官网发布：2018-11-23 14:50:26 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2018-11-23 14:50:26 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -3624,10 +3462,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.1.1_Enterprise
+## 企业版 · iKuai8_3.1.1_Enterprise
 
 <!-- ikuai-sources:[["企业版","7af4cbf059897e839a080bbe78e58e9383352637720fd0489959e6c0add8328c","### iKuai8_3.1.1_Enterprise","官网发布：2018-09-29 15:51:12 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2018-09-29 15:51:12 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -3694,10 +3531,9 @@
 <!-- /ikuai-sources -->
 
 
-### 免费版 · iKuai_3.1.1_Build
+## 免费版 · iKuai_3.1.1_Build
 
 <!-- ikuai-sources:[["免费版","eef528cf6c66f4824b4cf60c3b91aae1292970f28607c5978fe25327e49a09b4","### iKuai_3.1.1_Build","官网发布：2018-09-29 14:51:41 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2018-09-29 14:51:41 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -3727,10 +3563,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.1.0_Enterprise
+## 企业版 · iKuai8_3.1.0_Enterprise
 
 <!-- ikuai-sources:[["企业版","32653488acb8445e62150f06b2688322518b4a4e21ec972e9b17597dfeb09363","### iKuai8_3.1.0_Enterprise","官网发布：2018-08-30 15:49:27 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2018-08-30 15:49:27 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -3773,10 +3608,9 @@
 <!-- /ikuai-sources -->
 
 
-### 免费版 · iKuai_3.1.0_Build
+## 免费版 · iKuai_3.1.0_Build
 
 <!-- ikuai-sources:[["免费版","f8bedd1fc679880e1fd448eee945de828476b2f9767fb9d274cf643d789f4ae0","### iKuai_3.1.0_Build","官网发布：2018-08-30 14:52:44 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2018-08-30 14:52:44 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -3819,10 +3653,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.0.9_Enterprise
+## 企业版 · iKuai8_3.0.9_Enterprise
 
 <!-- ikuai-sources:[["企业版","6b6c5a0ca2c57994a8d2d38763ababab8012eafb642e741f6c9f576e9202c76d","### iKuai8_3.0.9_Enterprise","官网发布：2018-07-09 15:48:40 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2018-07-09 15:48:40 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -3883,10 +3716,9 @@
 <!-- /ikuai-sources -->
 
 
-### 免费版 · iKuai_3.0.9_Build
+## 免费版 · iKuai_3.0.9_Build
 
 <!-- ikuai-sources:[["免费版","87e00e4a7e60ac5106b04ee18a4bc17d43e87945a88976ba2b691082c2405347","### iKuai_3.0.9_Build","官网发布：2018-07-04 14:53:39 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2018-07-04 14:53:39 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -3957,10 +3789,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.0.8_Enterprise
+## 企业版 · iKuai8_3.0.8_Enterprise
 
 <!-- ikuai-sources:[["企业版","89b6f6abeccc5ad98d1b288f01f26e28110f8a53460d4c3d7df6f86f4a58104f","### iKuai8_3.0.8_Enterprise","官网发布：2018-06-26 15:47:15 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2018-06-26 15:47:15 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -4005,10 +3836,9 @@
 <!-- /ikuai-sources -->
 
 
-### 免费版 · iKuai_3.0.8_Build
+## 免费版 · iKuai_3.0.8_Build
 
 <!-- ikuai-sources:[["免费版","ffebaa2d248410e8578e64bc054ce3d2f8c7f7d9e18e39bbc7dfa5a5c787b09f","### iKuai_3.0.8_Build","官网发布：2018-06-26 14:54:32 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2018-06-26 14:54:32 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -4053,10 +3883,9 @@
 <!-- /ikuai-sources -->
 
 
-### 免费版 · iKuai_3.0.7_Build
+## 免费版 · iKuai_3.0.7_Build
 
 <!-- ikuai-sources:[["免费版","13f5494fb17b140ae506e4f5885d4e425bf28bc04fdee95669c92c16b3e269b9","### iKuai_3.0.7_Build","官网发布：2018-04-24 14:55:12 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2018-04-24 14:55:12 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -4070,10 +3899,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.0.7_Enterprise
+## 企业版 · iKuai8_3.0.7_Enterprise
 
 <!-- ikuai-sources:[["企业版","750f1f02363f958fc4f52a6881fe281803ae549e504f339a46b041aa454ff39d","### iKuai8_3.0.7_Enterprise","官网发布：2018-04-04 15:46:28 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2018-04-04 15:46:28 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -4087,10 +3915,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.0.6_Enterprise
+## 企业版 · iKuai8_3.0.6_Enterprise
 
 <!-- ikuai-sources:[["企业版","ae7c962cc63ba6528ff7632368f092dee4a0af075684e4f4ffb4ee4cfabe7649","### iKuai8_3.0.6_Enterprise","官网发布：2018-03-26 15:44:28 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2018-03-26 15:44:28 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -4121,10 +3948,9 @@
 <!-- /ikuai-sources -->
 
 
-### 免费版 · iKuai_3.0.6_Build
+## 免费版 · iKuai_3.0.6_Build
 
 <!-- ikuai-sources:[["免费版","9a643efec283d1f077f5f5a621f181c1c602c5a24381dea12ffa98e17404f870","### iKuai_3.0.6_Build","官网发布：2018-03-26 14:55:53 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2018-03-26 14:55:53 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -4158,10 +3984,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.0.5_Enterprise
+## 企业版 · iKuai8_3.0.5_Enterprise
 
 <!-- ikuai-sources:[["企业版","9c3519763ccdcd9668dc90e3e320a333e87062ba417a0589b0ade775e69545b8","### iKuai8_3.0.5_Enterprise","官网发布：2018-03-09 15:43:30 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2018-03-09 15:43:30 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -4202,10 +4027,9 @@
 <!-- /ikuai-sources -->
 
 
-### 免费版 · iKuai_3.0.5_Build
+## 免费版 · iKuai_3.0.5_Build
 
 <!-- ikuai-sources:[["免费版","5ea920517b094908702ad69832fc156a331a4a49a303bdddce4bdd8e0bc6a9b0","### iKuai_3.0.5_Build","官网发布：2018-03-09 14:57:02 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2018-03-09 14:57:02 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -4246,10 +4070,9 @@
 <!-- /ikuai-sources -->
 
 
-### 免费版 · iKuai_3.0.4_Build
+## 免费版 · iKuai_3.0.4_Build
 
 <!-- ikuai-sources:[["免费版","dab9c884a988cf9cc7a4f988bda65ed0191980e26df030d8836f8dbe4e71223e","### iKuai_3.0.4_Build","官网发布：2018-02-12 14:57:55 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2018-02-12 14:57:55 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -4312,10 +4135,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.0.4_Enterprise
+## 企业版 · iKuai8_3.0.4_Enterprise
 
 <!-- ikuai-sources:[["企业版","82904768cf3551d676e3594e0f5cf323ecbdaed46457482bc8d8923f044b29d4","### iKuai8_3.0.4_Enterprise","官网发布：2018-02-11 15:42:33 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2018-02-11 15:42:33 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -4378,10 +4200,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.0.3_Enterprise
+## 企业版 · iKuai8_3.0.3_Enterprise
 
 <!-- ikuai-sources:[["企业版","3b329ac1143d7295ec36f852dfb62a6522751736905ede7c71fe8e92b7d07dda","### iKuai8_3.0.3_Enterprise","官网发布：2018-01-05 15:41:17 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2018-01-05 15:41:17 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **修复功能**
 
@@ -4408,10 +4229,9 @@
 <!-- /ikuai-sources -->
 
 
-### 免费版 · iKuai_3.0.3_Build
+## 免费版 · iKuai_3.0.3_Build
 
 <!-- ikuai-sources:[["免费版","3e0c1d60b2f457ba8856a72cd9c8ea9081d06903fb17d4dcbf83d942305a8c8d","### iKuai_3.0.3_Build","官网发布：2018-01-05 14:58:59 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2018-01-05 14:58:59 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **修复功能**
 
@@ -4438,10 +4258,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.0.2_Enterprise
+## 企业版 · iKuai8_3.0.2_Enterprise
 
 <!-- ikuai-sources:[["企业版","52a2d60ad3cfa02eea029697e6a50bb22e5bad51e1bf63b0109e9f6a140ef5ed","### iKuai8_3.0.2_Enterprise","官网发布：2017-12-28 15:39:13 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2017-12-28 15:39:13 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -4464,10 +4283,9 @@
 <!-- /ikuai-sources -->
 
 
-### 免费版 · iKuai_3.0.2_Build
+## 免费版 · iKuai_3.0.2_Build
 
 <!-- ikuai-sources:[["免费版","d03aa2cc8575dd5dd7d27fbe16d5dce02a442ddc146f21b7246f42b7d04a32cb","### iKuai_3.0.2_Build","官网发布：2017-12-28 14:59:41 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2017-12-28 14:59:41 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -4490,10 +4308,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.0.1_Enterprise
+## 企业版 · iKuai8_3.0.1_Enterprise
 
 <!-- ikuai-sources:[["企业版","b73d63cd210efb865cf451324bd73649b4c0b241a0e712c4222b57cc182c39e8","### iKuai8_3.0.1_Enterprise","官网发布：2017-12-23 15:37:37 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2017-12-23 15:37:37 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -4519,10 +4336,9 @@
 <!-- /ikuai-sources -->
 
 
-### 免费版 · iKuai_3.0.1_Build
+## 免费版 · iKuai_3.0.1_Build
 
 <!-- ikuai-sources:[["免费版","9ab6cfd8a0540823ab8c1a20bc8a9a56445b02c698251a0e2b62be9d23394609","### iKuai_3.0.1_Build","官网发布：2017-12-23 15:00:35 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2017-12-23 15:00:35 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 
@@ -4548,10 +4364,9 @@
 <!-- /ikuai-sources -->
 
 
-### 企业版 · iKuai8_3.0.0_Enterprise
+## 企业版 · iKuai8_3.0.0_Enterprise
 
 <!-- ikuai-sources:[["企业版","b678eca8378652a9963f538d529e1e002006a722cc042c8214fd7aaac1dd1f58","### iKuai8_3.0.0_Enterprise","官网发布：2017-12-20 15:36:33 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)"]] -->
-**适用：** 企业版  ·  官网发布：2017-12-20 15:36:33 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 **新增功能**
 
@@ -4566,10 +4381,9 @@
 <!-- /ikuai-sources -->
 
 
-### 免费版 · iKuai_3.0.0_Build
+## 免费版 · iKuai_3.0.0_Build
 
 <!-- ikuai-sources:[["免费版","1003808d523e1b3f6bf1e6549e5eb16ba63daeda99ebcfc1c56ef769052ea5b8","### iKuai_3.0.0_Build","官网发布：2017-12-20 15:01:16 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)"]] -->
-**适用：** 免费版  ·  官网发布：2017-12-20 15:01:16 · [来源](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331)
 
 **新增功能**
 

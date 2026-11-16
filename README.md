@@ -13,7 +13,7 @@
 
 爱快小工具使用 [catalog.json](data/catalog.json) 获取完整索引。
 
-[官方历史版本](official-history.md)在北京时间每天 **08:30** 追加官网发布日志和官方固件目录记录。缺少 Build 的日志也会保留，供查阅使用。
+[官方历史更新日志](official-history.md)按免费版、企业版收录官网发布的更新正文，每天北京时间 **08:30** 更新。没有 Build 的官网日志也会保留。
 
 官网日志：[免费版](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331) · [企业版](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447) · [仅有日志、未验证下载的版本](release-notes-only.md)
 

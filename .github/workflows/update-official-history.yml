@@ -19,6 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Append and validate official history
+        env:
+          IKUAI_INDEX_GATEWAY: ${{ secrets.IKUAI_INDEX_GATEWAY }}
         run: |
           python3 scripts/update_official_history.py
           python3 scripts/update_official_history.py --check

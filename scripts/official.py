@@ -47,7 +47,7 @@ def extract(text,major,only=None):
                     rows.add((name[:-4]+'.iso',model))
     return rows
 
-def official4(model,gw,fetcher=fetch,*,include_device_sections=False):
+def official4_text(model,gw,fetcher=fetch):
     if not re.fullmatch(r'[!-~]{10,128}',gw):
         raise ValueError('invalid or missing gateway')
     n=''.join(str(b%10) for b in secrets.token_bytes(10))
@@ -65,7 +65,10 @@ def official4(model,gw,fetcher=fetch,*,include_device_sections=False):
     data=fetcher(meta['fileUrl'])
     if hashlib.md5(data).hexdigest()!=str(meta.get('md5','')).lower():
         raise ValueError('manifest digest mismatch')
-    entries=extract(data.decode('utf-8-sig'),'4',None if include_device_sections else model)
+    return data.decode('utf-8-sig')
+
+def official4(model,gw,fetcher=fetch,*,include_device_sections=False):
+    entries=extract(official4_text(model,gw,fetcher),'4',None if include_device_sections else model)
     if include_device_sections:
         entries={r for r in entries if r[1]==model or device_model(r[0])}
     return entries

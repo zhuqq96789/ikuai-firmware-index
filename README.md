@@ -13,6 +13,8 @@
 
 爱快小工具使用 [catalog.json](data/catalog.json) 获取完整索引。
 
+[官方历史版本](official-history.md)在北京时间每天 **08:30** 追加官网发布日志和官方固件目录记录。缺少 Build 的日志也会保留，供查阅使用。
+
 官网日志：[免费版](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331) · [企业版](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447) · [仅有日志、未验证下载的版本](release-notes-only.md)
 
 历史对照：[LucienShui](https://github.com/LucienShui/ikuai-firmware) · [LOVECHEN](https://github.com/LOVECHEN/ikuai-release) · [shiniuniu](https://github.com/shiniuniu/ikuai-firmware-public) · [iKuaiPatch](https://github.com/iKuaiPatch/firmware_archive) · [bikefly](https://github.com/bikefly/ikuaifw)

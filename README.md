@@ -13,4 +13,6 @@
 
 爱快小工具使用 [catalog.json](data/catalog.json) 获取完整索引。
 
-历史对照：[爱快更新日志](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331) · [LucienShui](https://github.com/LucienShui/ikuai-firmware) · [LOVECHEN](https://github.com/LOVECHEN/ikuai-release) · [shiniuniu](https://github.com/shiniuniu/ikuai-firmware-public) · [iKuaiPatch](https://github.com/iKuaiPatch/firmware_archive) · [bikefly](https://github.com/bikefly/ikuaifw)\n
+官网日志：[免费版](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331) · [企业版](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447) · [仅有日志、未验证下载的版本](release-notes-only.md)
+
+历史对照：[LucienShui](https://github.com/LucienShui/ikuai-firmware) · [LOVECHEN](https://github.com/LOVECHEN/ikuai-release) · [shiniuniu](https://github.com/shiniuniu/ikuai-firmware-public) · [iKuaiPatch](https://github.com/iKuaiPatch/firmware_archive) · [bikefly](https://github.com/bikefly/ikuaifw)

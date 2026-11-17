@@ -16,18 +16,31 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
       - name: Update and validate firmware index and release notes
+        id: catalog
         env:
           IKUAI_INDEX_GATEWAY: ${{ secrets.IKUAI_INDEX_GATEWAY }}
         run: |
           python3 scripts/update_index.py
           python3 scripts/update_index.py --check
+      - name: Archive original firmware without a public official link
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          IKUAI_INDEX_GATEWAY: ${{ secrets.IKUAI_INDEX_GATEWAY }}
+          IKUAI_ARCHIVE_CERT: ${{ secrets.IKUAI_ARCHIVE_CERT }}
+          IKUAI_ARCHIVE_KEY: ${{ secrets.IKUAI_ARCHIVE_KEY }}
+          IKUAI_ARCHIVE_CA: ${{ secrets.IKUAI_ARCHIVE_CA }}
+        run: python3 scripts/release_archive.py --workers 12
       - name: Commit changed index and release notes
+        if: ${{ !cancelled() && steps.catalog.outcome == 'success' }}
         run: |
           git add -- data/catalog.json devices version_list.txt version_enterprise_list.txt version_4_list.txt version_4_enterprise_list.txt official-history.md
+          if [ -f data/release-archive.json ]; then
+            git add -- data/release-archive.json
+          fi
           if git diff --cached --quiet; then
             exit 0
           fi

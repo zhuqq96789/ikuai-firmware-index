@@ -17,6 +17,8 @@
 
 [官方历史更新日志](official-history.md)只列版本和更新正文，每个 Build 一节，新增记录置顶。
 
+没有可用官方直链的固件，找到可校验的原包后会上传到 [Releases](https://github.com/zsz520/ikuai-firmware-index/releases)，网页优先使用项目归档地址。
+
 官网日志：[免费版](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331) · [企业版](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 
 历史对照：[LucienShui](https://github.com/LucienShui/ikuai-firmware) · [LOVECHEN](https://github.com/LOVECHEN/ikuai-release) · [shiniuniu](https://github.com/shiniuniu/ikuai-firmware-public) · [iKuaiPatch](https://github.com/iKuaiPatch/firmware_archive) · [bikefly](https://github.com/bikefly/ikuaifw) · [C0KE](https://github.com/C0KE/ikuai-fireware) · [iKuaiPatch 清单归档](https://github.com/iKuaiPatch/tools/commits/main/submit3/Version_all)

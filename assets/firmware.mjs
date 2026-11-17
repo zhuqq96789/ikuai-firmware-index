@@ -1,5 +1,6 @@
 const repo = 'https://github.com/zsz520/ikuai-firmware-index';
 const currentCatalog = 'https://raw.githubusercontent.com/zsz520/ikuai-firmware-index/main/data/catalog.json';
+const archiveIndex = 'https://raw.githubusercontent.com/zsz520/ikuai-firmware-index/main/data/release-archive.json';
 const officialPage = 'https://www.ikuai8.com/component/download';
 const patch = 'https://patch.ikuai8.com/';
 const projects = ['LucienShui/ikuai-firmware', 'LOVECHEN/ikuai-release', 'shiniuniu/ikuai-firmware-public',
@@ -73,12 +74,26 @@ export function decodeCatalog(payload) {
   return {entries, date:/^\d{4}-\d{2}-\d{2}$/.test(payload.date) ? payload.date : '—'};
 }
 
+export function applyReleaseArchive(entries, data) {
+  if (data?.schema !== 1 || !data.archived || !Array.isArray(data.pending)) return;
+  const pending = new Set(data.pending);
+  for (const entry of entries) {
+    const row = data.archived[entry.filename];
+    const tag = 'firmware-v' + entry.version[0] + '-' + (entry.model ? 'devices' : 'x86');
+    if (Array.isArray(row) && row[0] === tag && /^[a-f0-9]{64}$/.test(row[1]) && row[2] > 1048576) {
+      entry.release = repo + '/releases/download/' + tag + '/' + entry.filename;
+    }
+    entry.noPublicLink = pending.has(entry.filename);
+  }
+}
+
 export function linksFor(e) {
+  if (e.release) return {url:e.release, copy:e.release, label:'归档下载', icon:'down', source:'本项目 GitHub Releases'};
   let url = '';
   if (e.edition === 'free') url = patch + '3.x/' + (e.format === 'iso' ? 'iso/' : 'patch/') + e.filename;
   else if (e.edition === 'enterprise' && e.version.startsWith('3.') && e.format === 'bin') url = patch + 'ent/' + e.filename;
   else if (e.edition === 'device' && e.version.startsWith('3.')) url = patch + 'firmware/' + e.folder + '/' + e.filename;
-  if (url) return {url, copy:url, label:'下载固件', icon:'down', source:e.official ? '爱快官方' : '爱快历史地址', mirror:e.mirrors[0]};
+  if (url && !e.noPublicLink) return {url, copy:url, label:'下载固件', icon:'down', source:e.official ? '爱快官方' : '爱快历史地址', mirror:e.mirrors[0]};
   if (e.mirrors.length) return {url:e.mirrors[0].url, copy:e.mirrors[0].url, label:'镜像下载', icon:'down', source:'公开镜像 · ' + e.mirrors[0].project};
   return {url:officialPage, copy:e.filename, label:'前往爱快官网', icon:'arrow', source:'该文件没有公开直链，请从爱快官网获取。', gate:true};
 }
@@ -254,13 +269,13 @@ function init() {
     change();
   });
 
-  async function fetchCatalog(url) {
+  async function fetchData(url) {
     const controller = new AbortController();
     const timer = setTimeout(()=>controller.abort(),5500);
     try {
       const response = await fetch(url,{cache:'no-store',signal:controller.signal});
       if (!response.ok) throw new Error('索引暂不可用');
-      return decodeCatalog(await response.json());
+      return await response.json();
     } finally {clearTimeout(timer);}
   }
 
@@ -270,9 +285,10 @@ function init() {
     $('summary').textContent = '正在读取索引…';
     $('items').replaceChildren();
     try {
+      const releases = fetchData(archiveIndex).catch(() => fetchData('./data/release-archive.json')).catch(() => null);
       let data;
-      try { data=await fetchCatalog(currentCatalog);local=false; }
-      catch { data=await fetchCatalog('./data/catalog.json');local=true; }
+      try { data=decodeCatalog(await fetchData(currentCatalog));local=false; }
+      catch { data=decodeCatalog(await fetchData('./data/catalog.json'));local=true; }
       entries=data.entries;
       const models=[...new Set(entries.map(e=>e.model).filter(Boolean))].sort(modelOrder.compare);
       optionList(controls.model,'全部型号',models);
@@ -287,6 +303,8 @@ function init() {
       $('date').textContent=data.date;
       syncControls(q.get('version'));
       draw();
+      const releaseData = await releases;
+      if (releaseData) { applyReleaseArchive(entries, releaseData); draw(); }
     } catch {
       $('summary').textContent='索引暂不可用';
       const panel=el('div','empty','暂时无法读取固件索引。');

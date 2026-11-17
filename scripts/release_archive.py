@@ -149,6 +149,10 @@ def state_read(root):
     return obj
 
 
+def excluded_downloads(root):
+    return {name.casefold() for name in state_read(root).get('excluded', [])}
+
+
 def state_write(root,state):
     path=root/STATE
     data=(json.dumps(state,ensure_ascii=True,sort_keys=True,separators=(',',':'))+'\n').encode()
@@ -341,8 +345,10 @@ def run(root,github,*,local_dirs=(),authorized=None,import_audit=None,workers=5,
     if limit:planned=planned[:limit]
     print(f'Confirmed direct {len(public)}; not yet archived {len(outstanding)}; upload candidates {len(planned)}.',flush=True)
     def save():
-        state_write(root,{'schema':1,'archived':archived,'public':sorted(public),
-                          'pending':sorted(definitely_missing-set(archived))})
+        state={'schema':1,'archived':archived,'public':sorted(public),
+               'pending':sorted(definitely_missing-set(archived))}
+        if old.get('excluded'):state['excluded']=old['excluded']
+        state_write(root,state)
     save()
     with TemporaryDirectory(prefix='ikuai-release-') as scratch, ThreadPoolExecutor(max_workers=workers) as pool:
         def archive_one(name):

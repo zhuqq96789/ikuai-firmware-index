@@ -3,6 +3,7 @@ from pathlib import Path
 from index_format import decode
 from catalog_format import catalog_decode,catalog_encode,device_model
 from official import collect,extract,ALLOWED_4_MODELS
+from release_archive import excluded_downloads
 from update_official_history import OUTPUT as CHANGELOG,with_manifest_notes,validate
 ROOT=Path(__file__).resolve().parents[1]
 CATALOG=Path('data/catalog.json')
@@ -52,6 +53,9 @@ def seed(base,legacy_dir):
         path=legacy_dir/('mirror-manifest-'+model+'.data' if model.startswith('X86') else f'device4-manifest-{model}.ini')
         if path.exists():
             rows.update(extract(path.read_text(encoding='utf-8-sig'),'4',model))
+    excluded=excluded_downloads(base)
+    archive=[e for e in archive if e['filename'].casefold() not in excluded]
+    rows={row for row in rows if row[0].casefold() not in excluded}
     write(base/CATALOG,catalog_encode(day(),archive,rows))
     for p,content in version_lines(archive,rows,notes_only(base)).items():write(base/p,content)
 
@@ -62,7 +66,8 @@ def update(base,fetch=collect):
     rows,changes,failed=fetch(os.environ.get('IKUAI_INDEX_GATEWAY',''),known3,known4)
     if not rows:
         raise RuntimeError('All official queries failed; existing index preserved.')
-    union=official|rows
+    excluded=excluded_downloads(base)
+    union={row for row in official|rows if row[0].casefold() not in excluded}
     history=base/CHANGELOG
     text=with_manifest_notes(history.read_text(encoding='utf-8') if history.exists() else '',changes)
     if changes or history.exists():validate(text)
@@ -73,6 +78,8 @@ def update(base,fetch=collect):
 
 def check(base):
     _,archive,official=catalog_decode((base/CATALOG).read_bytes())
+    names={e['filename'].casefold() for e in archive}|{name.casefold() for name,_ in official}
+    if names & excluded_downloads(base):raise ValueError('Excluded files still appear in the download catalog')
     expected=version_lines(archive,official,notes_only(base))
     for p,data in expected.items():
         if (base/p).read_bytes()!=data:raise ValueError('Inconsistent list: '+str(p))

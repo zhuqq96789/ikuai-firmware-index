@@ -83,12 +83,14 @@ def official4(model,gw,fetcher=fetch,*,include_device_sections=False):
 
 def collect(gw,known3=(),known4=()):
     done=set(); notes={}; failed=[]
-    def get(jobs):
+    def get(jobs,*,allow_empty=False):
         rows=set()
         for key,job in jobs.items():
             try:
                 found,logs=job.result()
-                if not found: raise ValueError('no supported entries')
+                if not found:
+                    if allow_empty:continue
+                    raise ValueError('no supported entries')
                 rows.update(found)
                 notes.update(logs)
                 print(key, 'official files:',len(found),'release notes:',len(logs))
@@ -103,7 +105,9 @@ def collect(gw,known3=(),known4=()):
         rows4=get(early4)
         done.update(rows3|rows4)
         advertised={model for name,model in rows4 if device_model(name)}
-        new3={model for name,model in rows3 if device_model(name)}-set(known3)
-        models=sorted(set(ALLOWED_4_MODELS)|set(known4)|advertised|new3)
-        done.update(get({p:pool.submit(official4,p,gw) for p in models}))
+        devices3={model for name,model in rows3 if device_model(name)}
+        # An existing 3.x device may later publish its first 4.x build only
+        # through the dedicated model manifest, without appearing in x86 feeds.
+        models=sorted(set(ALLOWED_4_MODELS)|set(known3)|set(known4)|advertised|devices3)
+        done.update(get({p:pool.submit(official4,p,gw) for p in models},allow_empty=True))
     return done,notes,failed

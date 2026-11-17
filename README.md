@@ -1,5 +1,7 @@
 # 爱快固件版本索引
 
+[打开爱快固件库网页](https://zsz520.github.io/ikuai-firmware-index/) · 按型号、版本和格式查找固件。
+
 每行一个 `版本_Build日期`，新版在前。同一版本的不同 Build 分开记录。
 
 | x86 | 3.x | 4.x |

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8fb">
+  <meta name="description" content="查询爱快 x86 免费版、企业版与官方设备的历史固件，按型号、版本与格式找到下载入口。">
+  <title>爱快固件库 · 历史固件下载</title>
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/firmware.css">
+  <script type="module" src="./assets/firmware.mjs"></script>
+</head>
+<body>
+  <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-box" viewBox="0 0 24 24"><path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5zM4 7.5l8 4.5 8-4.5M12 12v9"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+    <symbol id="icon-down" viewBox="0 0 24 24"><path d="M12 4v11m-4-4 4 4 4-4M5 16v4h14v-4"/></symbol>
+    <symbol id="icon-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 4 4"/></symbol>
+    <symbol id="icon-filter" viewBox="0 0 24 24"><path d="M4 7h16M7 12h10m-7 5h4"/><circle cx="8" cy="7" r="1.4" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="1.4" fill="currentColor" stroke="none"/></symbol>
+  </svg>
+  <header class="top">
+    <div class="frame top-inner">
+      <a class="brand" href="./"><img src="./assets/mark.svg" alt="" width="33" height="33"><span>爱快固件库</span></a>
+      <nav aria-label="页面导航">
+        <a href="#catalog">固件目录</a>
+        <a href="https://github.com/zsz520/ikuai-firmware-index/blob/main/official-history.md">更新日志</a>
+        <a href="https://github.com/zsz520/ikuai-firmware-index">GitHub <svg><use href="#icon-arrow"></use></svg></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="frame">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow"><span></span> IKUAI FIRMWARE ARCHIVE</p>
+        <h1 id="page-title">爱快历史固件下载</h1>
+        <p class="intro">查找 x86 免费版、企业版和官方设备的历史固件。</p>
+      </div>
+      <dl class="metrics" aria-label="索引概览">
+        <div><dt>固件文件</dt><dd id="total">—</dd></div>
+        <div><dt>设备型号</dt><dd id="models">—</dd></div>
+        <div><dt>索引日期</dt><dd id="date">—</dd></div>
+      </dl>
+    </section>
+
+    <div class="layout" id="catalog">
+      <aside class="filter panel" aria-labelledby="filter-title">
+        <div class="filter-head"><h2 id="filter-title"><svg><use href="#icon-filter"></use></svg> 筛选固件</h2><button id="reset" class="text-button" type="button">重置</button></div>
+        <label>固件类型
+          <select id="edition"><option value="free">x86 免费版</option><option value="enterprise">x86 企业版</option><option value="device">官方设备</option></select>
+        </label>
+        <label id="model-field" hidden>设备型号<select id="model"><option value="">全部型号</option></select></label>
+        <label>系统分支
+          <select id="major"><option value="">全部分支</option><option value="4">4.x</option><option value="3">3.x</option></select>
+        </label>
+        <label id="arch-field">系统位数
+          <select id="arch"><option value="">全部位数</option><option value="x64">64 位</option><option value="x32">32 位</option></select>
+        </label>
+        <label>文件格式
+          <select id="format"><option value="">全部格式</option><option value="bin">BIN</option><option value="iso">ISO</option></select>
+        </label>
+        <label>固件版本<select id="version"><option value="">全部版本</option></select></label>
+      </aside>
+
+      <section class="results" aria-labelledby="result-title">
+        <div class="results-head">
+          <div><h2 id="result-title">固件列表</h2><p id="summary" role="status">正在读取索引…</p></div>
+          <label class="search"><svg><use href="#icon-search"></use></svg><input type="search" id="query" aria-label="搜索固件" placeholder="搜索版本、Build 或型号"></label>
+        </div>
+
+        <div id="selected" class="selected panel" hidden></div>
+        <div id="items" class="items panel" aria-label="筛选结果"></div>
+        <div id="pagination" class="pagination" hidden>
+          <button id="prev" class="button secondary" type="button">上一页</button>
+          <span id="page-number"></span>
+          <button id="next" class="button secondary" type="button">下一页</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="frame footer">
+    <span>爱快固件库</span>
+    <div><a href="https://www.ikuai8.com/component/download">爱快官网</a><a href="https://github.com/zsz520/ikuai-firmware-index/tree/main/devices">型号索引</a><a href="https://github.com/zsz520/ikuai-firmware-index">数据仓库</a></div>
+  </footer>
+  <noscript><p class="frame">请启用 JavaScript，或直接查看 <a href="https://github.com/zsz520/ikuai-firmware-index">GitHub 固件索引</a>。</p></noscript>
+</body>
+</html>

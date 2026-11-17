@@ -222,12 +222,17 @@ class Github:
         return out
 
 
-def obtain(name,refs,destination,local_dirs=(),authorized=None):
+def obtain(name,refs,destination,local_dirs=(),authorized=None,recovered_url=''):
     for location in local_dirs:
         p=location/name
         if p.is_file():
             try:return p,*verify_file(p,name)
             except (OSError,EOFError,TypeError,ValueError):pass
+    if recovered_url:
+        try:
+            transfer(open_public(recovered_url,timeout=25),destination)
+            return destination,*verify_file(destination,name)
+        except (OSError,EOFError,TypeError,ValueError):pass
     for ref in sorted((x for x in refs if x['url']),key=lambda r:not bool(r['sha256'])):
         try:
             transfer(open_public(ref['url'],timeout=25),destination)
@@ -315,17 +320,25 @@ def run(root,github,*,local_dirs=(),authorized=None,import_audit=None,workers=5,
         asset=remote.get(tag,({},{}))[1].get(name)
         if not asset or asset.get('size')!=size or asset.get('digest') not in (None,'','sha256:'+sha):
             archived.pop(name)
-    checks=sorted(set(entries)-set(archived)-public-definitely_missing)
+    # Recheck the original official address for missed historical packages as
+    # well as checking new entries. If one comes back, archive that exact file.
+    previous_pending=definitely_missing-set(archived)
+    checks=sorted(set(entries)-set(archived)-public)
+    recovered={}
     with ThreadPoolExecutor(max_workers=10) as executor:
         for name,status in zip(checks,executor.map(inspect_direct,checks)):
-            if status=='public':public.add(name)
+            if status=='public':
+                if name in previous_pending:
+                    recovered[name]=public_url(name)
+                else:
+                    public.add(name)
             if status=='missing':definitely_missing.add(name)
     pending=sorted(definitely_missing-set(archived),
                    key=lambda n:(not any(r['url'] for r in entries.get(n,[])),n))
     if limit:pending=pending[:limit]
     lock=Lock()
     errors=[]
-    planned = [n for n in pending if n in entries and (authorized and '_4.' in n or
+    planned = [n for n in pending if n in entries and (n in recovered or authorized and '_4.' in n or
                     any(r['url'] for r in entries[n]) or any((folder/n).is_file() for folder in local_dirs) or
                     n in remote.get(tag_for(n),({},{}))[1])]
     print(f'Confirmed direct {len(public)}; no public link {len(definitely_missing)}; new upload candidates with sources {len(planned)}.',flush=True)
@@ -348,7 +361,7 @@ def run(root,github,*,local_dirs=(),authorized=None,import_audit=None,workers=5,
                         transfer(open_public(asset['browser_download_url'],timeout=45),dest)
                         sha,size=verify_file(dest,name)
                 else:
-                    result=obtain(name,entries[name],dest,local_dirs,authorized)
+                    result=obtain(name,entries[name],dest,local_dirs,authorized,recovered.get(name,''))
                     if not result:return
                     path,sha,size=result
                     with lock:

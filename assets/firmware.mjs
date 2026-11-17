@@ -77,6 +77,7 @@ export function decodeCatalog(payload) {
 export function applyReleaseArchive(entries, data) {
   if (data?.schema !== 1 || !data.archived || !Array.isArray(data.pending)) return;
   const pending = new Set(data.pending);
+  const official = new Set(data.public || []);
   for (const entry of entries) {
     const row = data.archived[entry.filename];
     const tag = 'firmware-v' + entry.version[0] + '-' + (entry.model ? 'devices' : 'x86');
@@ -84,16 +85,20 @@ export function applyReleaseArchive(entries, data) {
       entry.release = repo + '/releases/download/' + tag + '/' + entry.filename;
     }
     entry.noPublicLink = pending.has(entry.filename);
+    entry.publicLinkVerified = official.has(entry.filename);
   }
 }
 
 export function linksFor(e) {
-  if (e.release) return {url:e.release, copy:e.release, label:'归档下载', icon:'down', source:'本项目 GitHub Releases'};
   let url = '';
   if (e.edition === 'free') url = patch + '3.x/' + (e.format === 'iso' ? 'iso/' : 'patch/') + e.filename;
   else if (e.edition === 'enterprise' && e.version.startsWith('3.') && e.format === 'bin') url = patch + 'ent/' + e.filename;
   else if (e.edition === 'device' && e.version.startsWith('3.')) url = patch + 'firmware/' + e.folder + '/' + e.filename;
-  if (url && !e.noPublicLink) return {url, copy:url, label:'下载固件', icon:'down', source:e.official ? '爱快官方' : '爱快历史地址', mirror:e.mirrors[0]};
+  if (url && !e.noPublicLink && (!e.release || e.publicLinkVerified)) {
+    return {url, copy:url, label:'下载固件', icon:'down', source:e.official || e.publicLinkVerified ? '爱快官方' : '爱快历史地址',
+      mirror:e.release ? {url:e.release, label:'备用归档'} : e.mirrors[0]};
+  }
+  if (e.release) return {url:e.release, copy:e.release, label:'归档下载', icon:'down', source:'本项目 GitHub Releases'};
   if (e.mirrors.length) return {url:e.mirrors[0].url, copy:e.mirrors[0].url, label:'镜像下载', icon:'down', source:'公开镜像 · ' + e.mirrors[0].project};
   return {url:officialPage, copy:e.filename, label:'前往爱快官网', icon:'arrow', source:'该文件没有公开直链，请从爱快官网获取。', gate:true};
 }
@@ -202,7 +207,7 @@ function init() {
     buttons.append(download,clip);
     holder.append(about,buttons);
     if (link.mirror) {
-      const extra = el('a','backup','备用镜像 ↗');
+      const extra = el('a','backup',(link.mirror.label || '备用镜像')+' ↗');
       extra.href = link.mirror.url;
       extra.target = '_blank';
       extra.rel = 'noopener noreferrer';

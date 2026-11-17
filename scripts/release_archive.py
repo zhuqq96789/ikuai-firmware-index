@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 LIMIT = 512 * 1024**2
 HEADER = bytes.fromhex('1f8b08006f9b4b590203')
 STATE = Path('data/release-archive.json')
+RELEASE_DESCRIPTION = '本项目保存已通过完整性校验的原始固件，作为官方链接失效时的备用下载。文件名保留原样。'
 OFFICIAL = 'https://patch.ikuai8.com/'
 PUBLIC_HOSTS = {'patch.ikuai8.com','github.com','raw.githubusercontent.com',
                 'media.githubusercontent.com','objects.githubusercontent.com',
@@ -195,7 +196,7 @@ class Github:
         try:
             return self.api('/releases','POST',{
                 'tag_name':tag,'name':labels[tag.removeprefix('firmware-')]+' 固件归档',
-                'body':'收录当前没有可用公开官方直链、且通过完整性校验的原始固件。文件名保留原样。',
+                'body':RELEASE_DESCRIPTION,
                 'make_latest':'false',
             })
         except urllib.error.HTTPError as exc:
@@ -222,15 +223,15 @@ class Github:
         return out
 
 
-def obtain(name,refs,destination,local_dirs=(),authorized=None,recovered_url=''):
+def obtain(name,refs,destination,local_dirs=(),authorized=None,direct_url=''):
     for location in local_dirs:
         p=location/name
         if p.is_file():
             try:return p,*verify_file(p,name)
             except (OSError,EOFError,TypeError,ValueError):pass
-    if recovered_url:
+    if direct_url:
         try:
-            transfer(open_public(recovered_url,timeout=25),destination)
+            transfer(open_public(direct_url,timeout=25),destination)
             return destination,*verify_file(destination,name)
         except (OSError,EOFError,TypeError,ValueError):pass
     for ref in sorted((x for x in refs if x['url']),key=lambda r:not bool(r['sha256'])):
@@ -316,32 +317,29 @@ def run(root,github,*,local_dirs=(),authorized=None,import_audit=None,workers=5,
             if status=='public':public.add(name);definitely_missing.discard(name)
             elif status=='missing':definitely_missing.add(name);public.discard(name)
     remote=github.releases()
+    for release,_ in remote.values():
+        if release.get('body') != RELEASE_DESCRIPTION:
+            github.api(f'/releases/{release["id"]}','PATCH',{'body':RELEASE_DESCRIPTION})
     for name,(tag,sha,size) in list(archived.items()):
         asset=remote.get(tag,({},{}))[1].get(name)
         if not asset or asset.get('size')!=size or asset.get('digest') not in (None,'','sha256:'+sha):
             archived.pop(name)
-    # Recheck the original official address for missed historical packages as
-    # well as checking new entries. If one comes back, archive that exact file.
-    previous_pending=definitely_missing-set(archived)
+    # Also revisit exact historical filenames whose official source was missing.
     checks=sorted(set(entries)-set(archived)-public)
-    recovered={}
     with ThreadPoolExecutor(max_workers=10) as executor:
         for name,status in zip(checks,executor.map(inspect_direct,checks)):
             if status=='public':
-                if name in previous_pending:
-                    recovered[name]=public_url(name)
-                else:
-                    public.add(name)
+                public.add(name)
+                definitely_missing.discard(name)
             if status=='missing':definitely_missing.add(name)
-    pending=sorted(definitely_missing-set(archived),
-                   key=lambda n:(not any(r['url'] for r in entries.get(n,[])),n))
-    if limit:pending=pending[:limit]
+    outstanding=sorted(set(entries)-set(archived),key=lambda n:(n in public,n))
     lock=Lock()
     errors=[]
-    planned = [n for n in pending if n in entries and (n in recovered or authorized and '_4.' in n or
+    planned = [n for n in outstanding if (n in public or authorized and '_4.' in n or
                     any(r['url'] for r in entries[n]) or any((folder/n).is_file() for folder in local_dirs) or
                     n in remote.get(tag_for(n),({},{}))[1])]
-    print(f'Confirmed direct {len(public)}; no public link {len(definitely_missing)}; new upload candidates with sources {len(planned)}.',flush=True)
+    if limit:planned=planned[:limit]
+    print(f'Confirmed direct {len(public)}; not yet archived {len(outstanding)}; upload candidates {len(planned)}.',flush=True)
     def save():
         state_write(root,{'schema':1,'archived':archived,'public':sorted(public),
                           'pending':sorted(definitely_missing-set(archived))})
@@ -361,7 +359,7 @@ def run(root,github,*,local_dirs=(),authorized=None,import_audit=None,workers=5,
                         transfer(open_public(asset['browser_download_url'],timeout=45),dest)
                         sha,size=verify_file(dest,name)
                 else:
-                    result=obtain(name,entries[name],dest,local_dirs,authorized,recovered.get(name,''))
+                    result=obtain(name,entries[name],dest,local_dirs,authorized,public_url(name) if name in public else '')
                     if not result:return
                     path,sha,size=result
                     with lock:
@@ -380,7 +378,7 @@ def run(root,github,*,local_dirs=(),authorized=None,import_audit=None,workers=5,
             finally:dest.unlink(missing_ok=True)
         list(pool.map(archive_one,planned))
     save()
-    print(f'Release assets {len(archived)}; pending {len(definitely_missing-set(archived))}; upload errors {len(errors)}.',flush=True)
+    print(f'Release assets {len(archived)}; not yet archived {len(set(entries)-set(archived))}; upload errors {len(errors)}.',flush=True)
 
 
 def main():
@@ -388,6 +386,7 @@ def main():
     from tempfile import TemporaryDirectory
     args=argparse.ArgumentParser()
     args.add_argument('--workers',type=int,default=4)
+    args.add_argument('--limit',type=int,default=0)
     args.add_argument('--audit',type=Path)
     cfg=args.parse_args()
     audit=dict(map(json.loads,cfg.audit.read_text().splitlines())) if cfg.audit else None
@@ -405,7 +404,7 @@ def main():
                     paths.append(path)
                 else:paths.append(None)
             authorized=AuthorizedSource(os.environ['IKUAI_INDEX_GATEWAY'],*paths)
-        run(ROOT,github,authorized=authorized,import_audit=audit,workers=cfg.workers)
+        run(ROOT,github,authorized=authorized,import_audit=audit,workers=cfg.workers,limit=cfg.limit)
 
 
 if __name__=='__main__':main()

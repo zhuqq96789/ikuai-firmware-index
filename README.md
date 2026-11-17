@@ -17,7 +17,7 @@
 
 [官方历史更新日志](official-history.md)只列版本和更新正文，每个 Build 一节，新增记录置顶。
 
-没有可用官方直链的固件，找到可校验的原包后会上传到 [Releases](https://github.com/zsz520/ikuai-firmware-index/releases)，网页优先使用项目归档地址。
+索引中能取得并校验的原始固件都会备份到 [Releases](https://github.com/zsz520/ikuai-firmware-index/releases)。网页优先给出官方链接，并提供项目归档作为备用。
 
 官网日志：[免费版](https://www.ikuai8.com/index.php?option=com_content&view=article&id=331) · [企业版](https://www.ikuai8.com/index.php?option=com_content&view=article&id=447)
 

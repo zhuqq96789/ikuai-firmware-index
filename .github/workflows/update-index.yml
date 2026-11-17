@@ -16,7 +16,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    timeout-minutes: 160
     steps:
       - uses: actions/checkout@v4
       - name: Update and validate firmware index and release notes
@@ -26,7 +26,7 @@ jobs:
         run: |
           python3 scripts/update_index.py
           python3 scripts/update_index.py --check
-      - name: Archive original firmware without a public official link
+      - name: Back up indexed original firmware to Releases
         env:
           GITHUB_TOKEN: ${{ github.token }}
           IKUAI_INDEX_GATEWAY: ${{ secrets.IKUAI_INDEX_GATEWAY }}

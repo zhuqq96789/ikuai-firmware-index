@@ -1,6 +1,6 @@
-const repo = 'https://github.com/zsz520/ikuai-firmware-index';
-const currentCatalog = 'https://raw.githubusercontent.com/zsz520/ikuai-firmware-index/main/data/catalog.json';
-const archiveIndex = 'https://raw.githubusercontent.com/zsz520/ikuai-firmware-index/main/data/release-archive.json';
+const repo = 'https://github.com/zhuqq96789/ikuai-firmware-index';
+const currentCatalog = 'https://raw.githubusercontent.com/zhuqq96789/ikuai-firmware-index/main/data/catalog.json';
+const archiveIndex = 'https://raw.githubusercontent.com/zhuqq96789/ikuai-firmware-index/main/data/release-archive.json';
 const officialPage = 'https://www.ikuai8.com/component/download';
 const patch = 'https://patch.ikuai8.com/';
 const projects = ['LucienShui/ikuai-firmware', 'LOVECHEN/ikuai-release', 'shiniuniu/ikuai-firmware-public',
